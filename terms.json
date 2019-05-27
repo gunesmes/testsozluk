@@ -1,4 +1,514 @@
-{
-	"Code":	"Program parçaları",
-  "Debugging": "Yazılım geliştirme süresince yazılan program parçalarının çalıştırılması"
-}
+[
+ {
+   "TERİM": "Code",
+   "ANLAMI": "Program parçaları"
+ },
+ {
+   "TERİM": "Debugging",
+   "ANLAMI": "yazılım geliştirme süresince yazılan program parçalarının çalıştırılması"
+ },
+ {
+   "TERİM": "Development of software",
+   "ANLAMI": "Yazılım geliştirme"
+ },
+ {
+   "TERİM": "Requirement",
+   "ANLAMI": "Yazılım gereksinimleri, neden yazılım gerekli, kullanıcı ihtiyaçları"
+ },
+ {
+   "TERİM": "Review",
+   "ANLAMI": "Gözden geçirme"
+ },
+ {
+   "TERİM": "Test basis",
+   "ANLAMI": "Tüm birim veya sistemlerin test için gerekli dökümanları"
+ },
+ {
+   "TERİM": "Test Cases",
+   "ANLAMI": "Test case; testin tanımı, adımları, amaçlarını içeren dökümanlar"
+ },
+ {
+   "TERİM": "Test objective",
+   "ANLAMI": "Test yapmaktaki amaç nedir."
+ },
+ {
+   "TERİM": "Conformance Testing",
+   "ANLAMI": "Compliance testing, uyumluluk testleri"
+ },
+ {
+   "TERİM": "Exit Criteria",
+   "ANLAMI": "Testi sonlandırma kriterleri"
+ },
+ {
+   "TERİM": "Incident",
+   "ANLAMI": "Hadise, vaka, (hata)"
+ },
+ {
+   "TERİM": "Regression Testing",
+   "ANLAMI": "Regresyon testi; bulunan hata sonucu yazılımda yapılan değişikliğin sisteme etkisinin testi"
+ },
+ {
+   "TERİM": "Test Condition",
+   "ANLAMI": "Testi gerçekleştirmek için gerekli koşullar"
+ },
+ {
+   "TERİM": "Test Date",
+   "ANLAMI": "Testin gerçekleştirildiği tarih"
+ },
+ {
+   "TERİM": "Test Execution",
+   "ANLAMI": "Testin gerçekleştirilmesi"
+ },
+ {
+   "TERİM": "Test Log",
+   "ANLAMI": "Test gerçekleşmesi sırasında tutulan hertürlü kayıt, döküman, vb."
+ },
+ {
+   "TERİM": "Tets Summary Repor",
+   "ANLAMI": "Test sonrasında testin sonuçlarının özet halinde sunulduğu test dökümanı"
+ },
+ {
+   "TERİM": "Testware",
+   "ANLAMI": "Test sonrasında ortaya çıkan her türlü test kayıtları, ürünleri, vb.,"
+ },
+ {
+   "TERİM": "Tets Plan",
+   "ANLAMI": "Test sırasında uyulması gereken kuralların bulunduğu test başlamadan önce hazırlanan plan"
+ },
+ {
+   "TERİM": "COTS (Commercial off-the-shelf)",
+   "ANLAMI": "paket proğramlar"
+ },
+ {
+   "TERİM": "Incremantel developmant model",
+   "ANLAMI": "Arttırımsal (iteratif) yazılım geliştirme modeli"
+ },
+ {
+   "TERİM": "Test level",
+   "ANLAMI": "Test seviyesi, birim-entegrasyon- ..."
+ },
+ {
+   "TERİM": "Validation",
+   "ANLAMI": "Doğrulama"
+ },
+ {
+   "TERİM": "Verification",
+   "ANLAMI": "Onaylama (Sağlama, daha uyğun olacağı kanısındayım)"
+ },
+ {
+   "TERİM": "V-model",
+   "ANLAMI": "Şelale modele alternatif olarak geliştirilen, testin herbir aşamada olduğu yazılım geliştirme modeli"
+ },
+ {
+   "TERİM": "Alpha-beta testing",
+   "ANLAMI": "Alfa testi, yazılım geliştirme ortamında yapılan kullanıcı kabul testleridir; Beta testi ise kullanıcıların kendi ortamlarında bir fiil uygulamayı kullanarak yaptıkları test aktiviteleridir. Eğer belirli sayıda ve davet ile belli profilde kullanıcılara izin verilerek beta testi amaçlanıyor ise buna closed-beta testi denir; kullanıcılarda herhangi bir sınırlama yok ise open-beta testi denir."
+ },
+ {
+   "TERİM": "Component testing",
+   "ANLAMI": "Birim testi (unit testing)"
+ },
+ {
+   "TERİM": "Driver",
+   "ANLAMI": "Sürücü"
+ },
+ {
+   "TERİM": "Functional req.",
+   "ANLAMI": "Fonksiyonel Gereksinimler"
+ },
+ {
+   "TERİM": "İntegration testing",
+   "ANLAMI": "Entegrasyon testi"
+ },
+ {
+   "TERİM": "Non-functional testing",
+   "ANLAMI": "Fonksiyonel olmayan testler. Örn"
+ },
+ {
+   "TERİM": "Operational testing",
+   "ANLAMI": "Operasyonel testler"
+ },
+ {
+   "TERİM": "Compliance - acceptance testing",
+   "ANLAMI": "Uygunluk (kurallar, yasalar, vb) testi"
+ },
+ {
+   "TERİM": "Robustness testing",
+   "ANLAMI": "Sağlamlık testi, Birim veya sistemin uygun olmayan durumlarda çalışabilmesi"
+ },
+ {
+   "TERİM": "Stub",
+   "ANLAMI": "Bir birimi test etmek için hazırlanmış proğram parçaları"
+ },
+ {
+   "TERİM": "System testing",
+   "ANLAMI": "Sistem tesleri, entegre çalışan sistemlerin testi"
+ },
+ {
+   "TERİM": "Test-driven development",
+   "ANLAMI": "Test yönelimli yazılım geliştirme. Test caseler önce hazırlanır ve tüm caseler testten geçene kadar yazılım devam eder."
+ },
+ {
+   "TERİM": "Test environment",
+   "ANLAMI": "Test ortamı"
+ },
+ {
+   "TERİM": "User acceptance testing",
+   "ANLAMI": "Kullanıcı kabul testleri"
+ },
+ {
+   "TERİM": "Black-box",
+   "ANLAMI": "Kara kutu testleri. Yazılımın iç yapısını; kod, algoritma, vb. Bilinmeden yapılan testlerdir."
+ },
+ {
+   "TERİM": "Code coverage",
+   "ANLAMI": "Yazılan kodların nekadarının çalıştırıldığını ve nekadarının çalıştırılmadığını kontrol eden testler bütünü"
+ },
+ {
+   "TERİM": "Re-testing",
+   "ANLAMI": "Bulunan hata sonrasinda yapılan değişikliğin test edilmesi"
+ },
+ {
+   "TERİM": "Functional Testing",
+   "ANLAMI": "Fonksiyonel testler"
+ },
+ {
+   "TERİM": "Iteroperability Testing",
+   "ANLAMI": "Birim veya sistemlerin birlikte çalışabilmelerinin testi"
+ },
+ {
+   "TERİM": "Load Testing",
+   "ANLAMI": "Yük testi, belli bir yükte(yogunlukta) yazılımın verdiği cevaplar"
+ },
+ {
+   "TERİM": "Maintainability Testing",
+   "ANLAMI": "Bakım yapılmasına nekadar uygun olduğu, güncellemenin maliyeti"
+ },
+ {
+   "TERİM": "Regression Testing",
+   "ANLAMI": "Regresyon testleri"
+ },
+ {
+   "TERİM": "Performance Testing",
+   "ANLAMI": "Performans testi"
+ },
+ {
+   "TERİM": "Portability Testing",
+   "ANLAMI": "Taşınabilirlik testleri"
+ },
+ {
+   "TERİM": "Reliabity Testing",
+   "ANLAMI": "Tutarlılık testleri"
+ },
+ {
+   "TERİM": "Security Testing",
+   "ANLAMI": "Güvelik testleri"
+ },
+ {
+   "TERİM": "Specification-based Testing",
+   "ANLAMI": "Gereksinimlerden yola çıkılarak test etmek"
+ },
+ {
+   "TERİM": "Stress  Testing",
+   "ANLAMI": "Yük testi, sınır değerleri bulmak için yapılan yıpratıcı testler"
+ },
+ {
+   "TERİM": "Structural Testing",
+   "ANLAMI": "Beyaz  kutu testleri"
+ },
+ {
+   "TERİM": "Test suite",
+   "ANLAMI": "Test yapılması için gerekli ortam"
+ },
+ {
+   "TERİM": "Usability Testing",
+   "ANLAMI": "Kullanılabilirlik testi"
+ },
+ {
+   "TERİM": "White-box Testing",
+   "ANLAMI": "Beyaz  kutu testleri"
+ },
+ {
+   "TERİM": "Statik Testing (Statik Testler)",
+   "ANLAMI": "Yazılımın kodu çalıştırılmadan, yazılımın kalitesiyle ilgili detaylarının tartışıldığı genelde kod seviyesinde olan ve yazılımcının kendi hatalarını bulması şeklinde gerçekleşen yazılım test aktiviteleridir. Genelde düşünce hatası(error, mistake) bulunur."
+ },
+ {
+   "TERİM": "Dynamic Testing (Dinamik Testler)",
+   "ANLAMI": "Yazılımın çalıştırılarak yapılan testlerdir. Genelde kod belli bir olgunluk seviyesine gelir ve versiyon (sürüm) numarası verilerek dinamik testlere başlanır. Giriş-Çıkışlar kontrol edilir yani yazılıma girilen her bir aktivitede yazılımın verdiği cevapların doğruluğu kontrol edilir. Genelde hataları (failure) bulunur."
+ },
+ {
+   "TERİM": "Reviews (Gözden Geçirme)",
+   "ANLAMI": "Statik test teknikleri içerisinde yeralır. Kod, döküman, gereksinimler daha uzman kişilerce gözden geçirilerek daha sonra ortaya çıkabilecek hatalar ayıklanmış olur."
+ },
+ {
+   "TERİM": "Entry criteria (Teste başlama kriteri)",
+   "ANLAMI": "Geliştirmenin belli bir olgunluga erişip (smoke testten geçebilen) test alınması için gerekli kriterlerdir."
+ },
+ {
+   "TERİM": "Exit Criteria (Testi sonlandırma kriterleri)",
+   "ANLAMI": "Yeterli miktarda test yapılip yapılmadığının anlaşılması için konulan kriterlere testi sonlandırma kriterleri denir. Risk yönetimi yapmak daha sağlıklı sonuçlar verir."
+ },
+ {
+   "TERİM": "Formal Review (Formal gözden geçirme)",
+   "ANLAMI": "Planlı ve hazırlanarak yapılan ve süreçleri olan gözden geçirmelerdir."
+ },
+ {
+   "TERİM": "Informal Review (Formal olmayan gözden geçirmeler)",
+   "ANLAMI": "Hızlıca ve plansız bir şekilde sonuca gitmek adına uzman kişilerle yapılan ve genelde dökümante edilmeyen toplantılardır."
+ },
+ {
+   "TERİM": "Inspection (İnceleme)",
+   "ANLAMI": "Kuralları olan ve bulguların raporlandığı ve bir lider tarafından yönetilen bireysel veya grubca yapılan gözden geçirme toplantılarıdır."
+ },
+ {
+   "TERİM": "Moderator (Moderatör)",
+   "ANLAMI": "Toplantıları yöneten kişiler"
+ },
+ {
+   "TERİM": "Reviewer (İneleyici)",
+   "ANLAMI": "Kod, döküman, vb. inceleyen uzmanlaşmış kişiler"
+ },
+ {
+   "TERİM": "Scribe (Yönetici)",
+   "ANLAMI": "Planlamayı yapar, yönetir, iletişim kurar."
+ },
+ {
+   "TERİM": "Technical Review (Teknik gözden geçirmeler)",
+   "ANLAMI": "Kod, sistem gereksinimleri, database tasarımı gibi teknik konuların tartışıldığı toplantılardır. Teknik gözden geçirmelerin sorunu çözmek, alternatif çözümler üzerine tartışmak ve en efektifine çözüme karar vermek, kurallara uygunluğu denetlemek gibi amaçları olabilir."
+ },
+ {
+   "TERİM": "Walkthrough",
+   "ANLAMI": "Üstünden geçmek. Yazarın neler yaptığını ilgili kişilere aktarır, yazıcı (scribe) katılabilir, ve amacı öğretmek, hata bulmak, katılımcı yorumu almak şeklinde sıralanabilir."
+ },
+ {
+   "TERİM": "Complier (Derleyici)",
+   "ANLAMI": "Yazılan kodların derlenmesi ve çalıştırılmasını sağlayan araçlardır."
+ },
+ {
+   "TERİM": "Cyclomatic Complexity",
+   "ANLAMI": "Yazılan kodun nekadar karmaşık olduğunu gösteren bir parametre."
+ },
+ {
+   "TERİM": "Control Flow (Akış şeması)",
+   "ANLAMI": "Yazılan kodun işletilmesi sırasında neleri yapacağını gösteren yol, akış şemaşı."
+ },
+ {
+   "TERİM": "Data Flow (Veri Akışı)",
+   "ANLAMI": "Veri akışını (oluşturma – kullanma – yoketme) adımlarını soyut bir şekilde anlatan akış şemalarıdır."
+ },
+ {
+   "TERİM": "Static Analysis (Statik analiz)",
+   "ANLAMI": "Yazılımı oluşturan parçaların (kod, analiz, gereksinim, vb.) çalıştırmaksızın analiz edilmesidir."
+ },
+ {
+   "TERİM": "Test cases (Test Kase)",
+   "ANLAMI": "Bir bulguyu test etmek için gerekli tüm bilgileri (test datası, test adımları, test açıklaması, test başarılı sonucu, vb.) içerisinde barındıran test faliyetine genel olarak test case denir."
+ },
+ {
+   "TERİM": "Test case specification (Test Kase Açıklaması)",
+   "ANLAMI": "Bir grub test case için (test set) hazırlanmış ve o test seti koşturmak için gerekli bilgileri içeren dökümandır."
+ },
+ {
+   "TERİM": "Test condition (Test Koşulu)",
+   "ANLAMI": "Bir veya birden fazla test casenin koşturulması için gerekli koşullar."
+ },
+ {
+   "TERİM": "Test data (Test Verisi)",
+   "ANLAMI": "Test caseleri koşturmak için kullanılan veriler (kullanıcı bilgilieri, şifre, kupon, kod, numara, vb.)"
+ },
+ {
+   "TERİM": "Test procedure specification (Test Koşturma Adımları)",
+   "ANLAMI": "Test caseleri koşturmak için yapılması gerekenlerin (test steps) sıralı bir şekilde (adım-adım) verildiği döküman."
+ },
+ {
+   "TERİM": "Tets script",
+   "ANLAMI": "Test caseleri otomatik koşturmak için yazılmış kod parçaları."
+ },
+ {
+   "TERİM": "Traceability",
+   "ANLAMI": "Döküman veya program içerisinde ilgili parçaların izlenebilmesine (ilgili kod nerden cağrıldığı, nerelerde kullanıldığı, vb.) olanak veren bir özelliktir."
+ },
+ {
+   "TERİM": "BB Test Design Tech. (Black Box – Kara Kutu Test Teknikleri)",
+   "ANLAMI": "Yazılımın fonksyionları test edilir. Yazılımın iç yapısı (kod, database, aktarım, vb.) görülmediği için kullanıcı gibi test test edilir, bu yüzden kara-kutu testler denir. Girişlere karşılık gelen çıkışlar kontrol edilir, hatalı çıkışlar saptanır."
+ },
+ {
+   "TERİM": "Exp. Based Design Tech. (Experience Based – Deneyim Temelli Test Teknikleri)",
+   "ANLAMI": "Testcilerin deneyimlerinden yola çıkarak test edilir. Farklı alanlar için farklı test metodlar kullanılır. Hataların öbekleşmesi (defect clustering) bu test tekniğinde önemli yeralır."
+ },
+ {
+   "TERİM": "Spec. Based Design Tech. (Specification Based – Fonksiyon Temelli Test Teknikleri)",
+   "ANLAMI": "Kara kutu test teknikleridir."
+ },
+ {
+   "TERİM": "Struc. Based Design Tech (Structural Based – Yapısal Test Teknikleri)",
+   "ANLAMI": "Beyaz kutu test teknikleridir."
+ },
+ {
+   "TERİM": "WB Design Tech. (White Box – Beyaz Kutu Test Teknikleri)",
+   "ANLAMI": "Yazılımın iç dinamikleri (algoritmalar, mantık yapıları, database sorguları, mimari yapısı, vb.) göz önüne alınarak analiz çıktıları test edilir."
+ },
+ {
+   "TERİM": "Boundary Value Analysis (Sınır Değer Analizi)",
+   "ANLAMI": "Sınır değerler kontrol edilir. Örneğin"
+ },
+ {
+   "TERİM": "Decision Table Testing (Karar Tablosu Testi)",
+   "ANLAMI": "Eğer kontrol edilecek çok sayıda durum var ise her bir durumu tablo içerisine alınır ve herbir duruma karşı yazılımın vericeği cevaplar yine tabloya yerleştirilerek karar tablosu oluşturulur."
+ },
+ {
+   "TERİM": "Equivalence Partitioning (Eşdeğer Aralık Test)",
+   "ANLAMI": "Aynı sonuçlar üreten girdiler gruplanarak sadece farklı sonuçlar üreten giriş değerleri grublanmış sınırlandırılmış olur. Test için her bir gruptan bir giriş değerini kullanmak yeterli olacaktır. Örneğin"
+ },
+ {
+   "TERİM": "State Transition Testing (Durum Ğeçiş Testi)",
+   "ANLAMI": "Yazılımın durum geçişi gösterdiği yerlerin testleridir."
+ },
+ {
+   "TERİM": "Use Case Testing (Fayda Analizi Test)",
+   "ANLAMI": "Analiz çıktılarının testidir."
+ },
+ {
+   "TERİM": "Code Coverage (Kod Kapsamı)",
+   "ANLAMI": "Hangi kod parçalarının çalıştırılıp hangilerinin çalıştırılmadığını ölçmek için kullanılan bir birimdir."
+ },
+ {
+   "TERİM": "Decision Coverage (Kontrol Noktalarının Kapsamı)",
+   "ANLAMI": "Kod içerisinde nekadar döngünün çalıştırıldığını göstermek için kullanılan bir birimdir. Çalıştırılan toplam döngülerin koddaki tüm döngülere oranı ile bulunur"
+ },
+ {
+   "TERİM": "Statement Coverage (Tüm Noktoların Kapsamı)",
+   "ANLAMI": "koddaki ifadelerin çalıştırma oranını bulmak için kullanılan bir birimdir."
+ },
+ {
+   "TERİM": "Structural Testing (Yapısal Testler)",
+   "ANLAMI": "Beyaz kutu testleride denilen yazılımın iç yapısını test etmeye yönelik test teslerdir."
+ },
+ {
+   "TERİM": "Tester (Testçi)",
+   "ANLAMI": "Test yapan kişiler."
+ },
+ {
+   "TERİM": "Test Leader (Test Lideri)",
+   "ANLAMI": "Geniş test grupları içerisinde testçilere görevlerini dağıtan, biraz daha üstten bakabilen kişilerdir. Sanılanın aksine birebir test yaparlar."
+ },
+ {
+   "TERİM": "Test Manager (Test Grubu Yöneticisi)",
+   "ANLAMI": "Test grubunu yöneten kişilerdir."
+ },
+ {
+   "TERİM": "Entry criteria (Teste başlama kriteri)",
+   "ANLAMI": "Geliştirmenin belli bir olgunluga erişip (smoke testten geçebilen) test alınması için gerekli kriterlerdir."
+ },
+ {
+   "TERİM": "Exit Criteria (Testi sonlandırma kriterleri)",
+   "ANLAMI": "Yeterli miktarda test yapılip yapılmadığının anlaşılması için konulan kriterlere testi sonlandırma kriterleri denir. Risk yönetimi yapmak daha sağlıklı sonuçlar verir."
+ },
+ {
+   "TERİM": "Tets Plan (Test Planı)",
+   "ANLAMI": "Test sırasında uyulması gereken kuralların bulunduğu test başlamadan önce hazırlanan plan"
+ },
+ {
+   "TERİM": "Test level (Test Seviyesi)",
+   "ANLAMI": "Test seviyesi, birim-entegrasyon- ..."
+ },
+ {
+   "TERİM": "Test Approach (Test Yaklaşımı)",
+   "ANLAMI": "Hangi tip test grubunun hazırlanacağını tanımlayan firmanın benimsediği test methodlarının seçmmeye yarayan yöntemlerdir."
+ },
+ {
+   "TERİM": "Test Strategy (Test Stratejisi)",
+   "ANLAMI": "Test yaklaşımında belirlenen test türlerinin işletilmesi, teste başlama, testi sonladırma kritleri, hata raporlaması, vb içerisine alan test yönetimi."
+ },
+ {
+   "TERİM": "Test Procedure (Test Adımları)",
+   "ANLAMI": "Testi işletmek için gerekli olan adımların anlatıldığı döküman."
+ },
+ {
+   "TERİM": "Defect Density (Hata Yoğunluğu)",
+   "ANLAMI": "Hataların bulunma sıklığı, bir modül üzerinde saptanan hata oranı"
+ },
+ {
+   "TERİM": "Failure Rate (Hata Oranı)",
+   "ANLAMI": "Testte hata veren test case oranı"
+ },
+ {
+   "TERİM": "Test Control (Test Kontrolü)",
+   "ANLAMI": "Plandan sapma olması durumunda test caselerin sapmayı önlemek için kontrol edilmesi"
+ },
+ {
+   "TERİM": "Test Coverage (Test Kapsamı)",
+   "ANLAMI": "Mevcut test caselerin yazılımın nekadarını test ettiğini gösteren bir birim"
+ },
+ {
+   "TERİM": "Test Monitoring (Test Görüntüleme)",
+   "ANLAMI": "Test caseler çalıştırılırken mevcut durum ile planlanan arasındaki farkları görüntülemek amaçlı kurulmuş test yönetimi faliyeti"
+ },
+ {
+   "TERİM": "Test Report (Test Raporu)",
+   "ANLAMI": "Testlerin tamamlanmasına mütakip çıkan sonuçların özet halinde sunulduğu rapor."
+ },
+ {
+   "TERİM": "Configuration Manegement (Konfigürasyon Yönetimi)",
+   "ANLAMI": "Sistem içerisindeki tüm ekipman ve yazılımların (hardware and software) kontrol edildiği yönetim araçlarına konfigürasyon yönetimi denir."
+ },
+ {
+   "TERİM": "Version Control (Versiyon Kontrolü)",
+   "ANLAMI": "Yazılımlar üzerinde yapılan değişimleri kontrol amacıyla geliştirilmiş ve gerektiğinde istenilen değişikliği (sürüm) geriye almaya yarayan yazılım araçlarıdır."
+ },
+ {
+   "TERİM": "Risk",
+   "ANLAMI": "Hatanın ortaya çıkma olasılığı."
+ },
+ {
+   "TERİM": "Product Risk (Ürün Riski)",
+   "ANLAMI": "Ürünün istenildiği gibi tamamlanmasını engelleyebilecek etkenler."
+ },
+ {
+   "TERİM": "Project Risk (Proje Riski)",
+   "ANLAMI": "Projenin istenildiği gibi tamamlanmasını engelleyebilecek etkenler."
+ },
+ {
+   "TERİM": "Risk Based Testing (Risk Temelli Test)",
+   "ANLAMI": "Riskleri bilerek ve riskleri göz önünde tutarak test eforunu taksim etmek ve testleri yapmak riskin yüksek olduğu yerlerde yoğunlaştırmayı amaçyan test yaklaşımı (test approach)."
+ },
+ {
+   "TERİM": "Incident Logging (Vaka Kaydı)",
+   "ANLAMI": "Test sırasında saptanan her türlü hata ve eksikliğin otomatik kayıt altına alındığı kayıt sistemi."
+ },
+ {
+   "TERİM": "Root Cause (Problemin Özü)",
+   "ANLAMI": "Bir sorunu çözmek için yapılan neden sonuç araştırmalarıdır."
+ },
+ {
+   "TERİM": "Debugging Tool (Hata Ayıklama Araçları – Debuging Araçları)",
+   "ANLAMI": "Proğramcıların hataları oluşturmak, araştırmak ve ayıklamak veya proğramları adım adım çalıştırmak için kullandıkları araçlardır."
+ },
+ {
+   "TERİM": "Driver",
+   "ANLAMI": "Test sırasında olmayan bir birim veya bileşen yerine kullanarak testi gerçekleştirmeye yarayan test yazılım elemanları."
+ },
+ {
+   "TERİM": "Probe Effect (Ölçücü Etkisi)",
+   "ANLAMI": "Test amacıyla kullanılan bir araç test edilen biriminin üzerine bir etki bırakır. Test sonuçlarına yansıyan bu etkiye ölçücü (probe) etkisi denir. Performans ölçen araçların performansı ölçülen ürün üzerine olumsuz etkisi gibi. Kod coverage yapan bir aracın kodu incelemeye alması ve bazı kodları dahil edememesi gibi durumda başka bir örnektir. Daha uç bir örnek ise debugging yapan bir aracın varlığında hatanın bulunamaması yani hatanın oluşması için debuggerin çalışmıyo olması koşuludur. Bu probe effect Heizenberg’in uncertainity princible (belirsizlik kuralı) ile Heizenbugs adını almıştır."
+ },
+ {
+   "TERİM": "Stub",
+   "ANLAMI": "Yazılımın işletilemeyen kısmında tanımlı bir fonksiyon görevi gören ve o fonksiyon çalıştırılmadan proğramcının istediği sonucu üreten kod parçalarıdır. Programı test etmek amacıyla doğru çalıştığından emin olunmayan fonksiyonları taklit ederek geriye kalan kısımlar test edilir."
+ },
+ {
+   "TERİM": "Data Driven Testing",
+   "ANLAMI": "Testler otomasyonla işletilir. Test için veriler giriş (input) ve çıkış (expected result) bir tabloya girilir ve otomasyon proğramı buradaki verileri kullanarak yazılım test edilir."
+ },
+ {
+   "TERİM": "Keyword Driven Testing",
+   "ANLAMI": "Fonksiyonel bazlı kelimeler üzerinden test case oluşturularak otomatik test yöntemidir. Login-  createUser - logout  gibi her bir kelimenin kendisi test case olacak şekilde test scriptleri hazırlanır ve senaryoya uygun kombinasyonlarla test oluşturulur."
+ },
+ {
+   "TERİM": "Scripting Language (Scripting Dili)",
+   "ANLAMI": "Test otomasyonunda kullanılabilen programlama dili."
+ },
+ {
+   "TERİM": "http://whisperinggums.wordpress.com/2011/09/14/whither-dictionaries/",
+   "ANLAMI": ""
+ }
+]
