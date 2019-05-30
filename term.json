@@ -1,20 +1,26 @@
 [
  	 {
-	"Code": "Program parçaları"
+	"term": "Code",
+	"meaning": "Proğram parçaları"
  	 },
   	{
-	"Debugging": "yazılım geliştirme süresince yazılan program parçalarının çalıştırılması"
+	"term": "Debugging",
+		"meaning":"yazılım geliştirme süresince yazılan program parçalarının çalıştırılması"
   	},
 	{
-	"Development of software": "Yazılım geliştirme"
+	"term": "Development of software",
+		"meaning": "Yazılım geliştirme"
   	},
 	{
-	"Requirement": "Yazılım gereksinimleri, neden yazılım gerekli, kullanıcı ihtiyaçları"
+	"term": "Requirement",
+		"meaning": "Yazılım gereksinimleri, neden yazılım gerekli, kullanıcı ihtiyaçları"
 	},
 	{
-	"Review": "Gözden geçirme"
+	"term": "Review",
+		"meaning": "Gözden geçirme"
 	 },
 	{
-	"Test basis": "Tüm birim veya sistemlerin test için gerekli dökümanları"
+	"term": "Test basis",
+		"meaning": "Tüm birim veya sistemlerin test için gerekli dökümanları"
   	}
 ]
