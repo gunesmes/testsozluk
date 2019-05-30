@@ -1,4 +1,4 @@
-[
+{
 	"Code": "Program parçaları",
 	"Debugging": "yazılım geliştirme süresince yazılan program parçalarının çalıştırılması",
 	"Development of software": "Yazılım geliştirme",
@@ -126,4 +126,4 @@
 	"Data Driven Testing": "Testler otomasyonla işletilir. Test için veriler giriş (input) ve çıkış (expected result) bir tabloya girilir ve otomasyon proğramı buradaki verileri kullanarak yazılım test edilir.",
 	"Keyword Driven Testing": "Fonksiyonel bazlı kelimeler üzerinden test case oluşturularak otomatik test yöntemidir. Login- createUser - logout gibi her bir kelimenin kendisi test case olacak şekilde test scriptleri hazırlanır ve senaryoya uygun kombinasyonlarla test oluşturulur.",
 	"Scripting Language (Scripting Dili)": "Test otomasyonunda kullanılabilen programlama dili."
-]
+}
