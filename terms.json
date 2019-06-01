@@ -125,5 +125,6 @@
 	{"term":"Stub", "meaning": "Yazılımın işletilemeyen kısmında tanımlı bir fonksiyon görevi gören ve o fonksiyon çalıştırılmadan proğramcının istediği sonucu üreten kod parçalarıdır. Programı test etmek amacıyla doğru çalıştığından emin olunmayan fonksiyonları taklit ederek geriye kalan kısımlar test edilir."},
 	{"term":"Data Driven Testing", "meaning": "Testler otomasyonla işletilir. Test için veriler giriş (input) ve çıkış (expected result) bir tabloya girilir ve otomasyon proğramı buradaki verileri kullanarak yazılım test edilir."},
 	{"term":"Keyword Driven Testing", "meaning": "Fonksiyonel bazlı kelimeler üzerinden test case oluşturularak otomatik test yöntemidir. Login- createUser - logout gibi her bir kelimenin kendisi test case olacak şekilde test scriptleri hazırlanır ve senaryoya uygun kombinasyonlarla test oluşturulur."},
-	{"term":"Scripting Language (Scripting Dili)", "meaning": "Test otomasyonunda kullanılabilen programlama dili."}
+	{"term":"Scripting Language (Scripting Dili)", "meaning": "Test otomasyonunda kullanılabilen programlama dili."},
+	{"term":"", "meaning": ""}
 ]
