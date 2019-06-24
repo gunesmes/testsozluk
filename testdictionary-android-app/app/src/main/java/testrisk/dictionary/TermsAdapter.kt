@@ -1,6 +1,9 @@
 package testrisk.dictionary
 
+import android.annotation.SuppressLint
+import android.content.Context
 import android.graphics.Color
+import android.support.v4.content.ContextCompat
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -17,6 +20,7 @@ class TermsAdapter(private val terms: List<Term>): RecyclerView.Adapter<TermsAda
 
     override fun getItemCount(): Int = terms.size
 
+    @SuppressLint("ResourceAsColor")
     override fun onBindViewHolder(holder: TermViewHolder, position: Int) {
         val termsSorted = terms.sortedBy { term -> term.term }
 
@@ -26,13 +30,12 @@ class TermsAdapter(private val terms: List<Term>): RecyclerView.Adapter<TermsAda
         holder.view.tvMeaning.text = term.meaning
 
         if(position % 2 == 0) {
-            holder.view.oneLineTerm.setBackgroundColor(Color.parseColor("#F3F0EF"))
+            val evenColor = ContextCompat.getColor(holder.view.context, R.color.colorEven)
+            holder.view.oneLineTerm.setBackgroundColor(evenColor)
         } else {
-            holder.view.oneLineTerm.setBackgroundColor(Color.parseColor("#FFFFFF"))
+            val oddColor = ContextCompat.getColor(holder.view.context, R.color.colorOdd)
+            holder.view.oneLineTerm.setBackgroundColor(oddColor)
         }
-
-
-
     }
 
     class TermViewHolder(val view: View): RecyclerView.ViewHolder(view)

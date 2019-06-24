@@ -132,22 +132,68 @@ class MainActivity : AppCompatActivity() {
         textAbout = findViewById(R.id.about)
 
         navView.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
+
         setLatestCommit()
         fetchReadMe()
+    }
+
+    private fun showReadMe(text: String) {
+        textMessage.movementMethod = LinkMovementMethod.getInstance()
+        textMessage.text = Html.fromHtml(parseTextLink(text))
+    }
+
+    private fun showTerms(terms: List<Term>) {
+        recyclerView.layoutManager = LinearLayoutManager(this)
+
+        if(terms.isEmpty()) {
+            var newTerms = mutableListOf<Term>()
+            newTerms.add(Term("404-not-found", TERM_NOT_FOUND))
+            recyclerView.adapter = TermsAdapter(newTerms)
+        } else {
+            recyclerView.adapter = TermsAdapter(terms)
+        }
+
+    }
+
+    private fun showAbout(text: String) {
+        textAbout.movementMethod = LinkMovementMethod.getInstance()
+        textAbout.text = removeNewLines(text)
+    }
+
+    private fun fetchReadMe(){
+        val shaDB = dbHelper?.getSha("readme")
+
+        if (shaReadme != shaDB) {
+            addOrUpdateSha("readme", shaReadme, shaDB)
+
+            TermsApi().getReadMe().enqueue(object: Callback<ResponseBody> {
+                override fun onFailure(call: Call<ResponseBody>, t: Throwable) {
+                    Toast.makeText(applicationContext, NETWORK_ERROR, Toast.LENGTH_LONG).show()
+                }
+
+                override fun onResponse(call: Call<ResponseBody>, response: Response<ResponseBody>) {
+                    val readMe = response.body()?.string()
+                    readMe?.let {
+                        showReadMe(it)
+                        addPageContentDB("readme", it)
+                    }
+                }
+            })
+        } else {
+            Log.v("readme: $shaReadme == $shaDB", "DB")
+            // get it from DB
+            dbHelper?.getPageContent("readme")?.let { showReadMe(it) }
+        }
+
+        loadingPanel.visibility = GONE
     }
 
     private fun fetchTerms() {
         val shaDB = dbHelper?.getSha("terms")
 
         if (shaTerms != shaDB ) {
-            Log.v("Terms: $shaTerms != $shaDB", "DB")
-
             // if the DB doesn't have latest commit update the sha and terms
-            if (shaDB == "notGetShaFromDB") {
-                dbHelper?.addSha(fileName = "terms", newSha = shaTerms)
-            } else {
-                dbHelper?.updateSha(fileName = "terms", newSha = shaTerms)
-            }
+            addOrUpdateSha("terms", shaTerms, shaDB)
 
             TermsApi().getTerms().enqueue(object : Callback<List<Term>> {
                 override fun onFailure(call: Call<List<Term>>, t: Throwable) {
@@ -177,58 +223,11 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    private fun fetchReadMe(){
-        val shaDB = dbHelper?.getSha("readme")
-
-        if (shaReadme != shaDB) {
-            Log.v("Readme: $shaReadme != $shaDB", "DB")
-
-            // if the DB doesn't have latest commit update the sha and terms
-            if (shaDB == "notGetShaFromDB") {
-                dbHelper?.addSha(fileName = "readme", newSha = shaReadme)
-            } else {
-                dbHelper?.updateSha(fileName = "readme", newSha = shaReadme)
-            }
-
-            TermsApi().getReadMe().enqueue(object: Callback<ResponseBody> {
-                override fun onFailure(call: Call<ResponseBody>, t: Throwable) {
-                    Toast.makeText(applicationContext, NETWORK_ERROR, Toast.LENGTH_LONG).show()
-                }
-
-                override fun onResponse(call: Call<ResponseBody>, response: Response<ResponseBody>) {
-                    val readMe = response.body()?.string()
-                    readMe?.let {
-                        showReadMe(it)
-                        addPageContentDB("readme", it)
-                    }
-                }
-            })
-        } else {
-            Log.v("readme: $shaReadme == $shaDB", "DB")
-            // get it from DB
-            dbHelper?.getPageContent("readme")?.let { showReadMe(it) }
-        }
-
-        loadingPanel.visibility = GONE
-    }
-
-
-    private fun showReadMe(text: String) {
-        textMessage.movementMethod = LinkMovementMethod.getInstance()
-        textMessage.text = Html.fromHtml(parseTextLink(text))
-    }
-
     private fun fetchAbout() {
         val shaDB = dbHelper?.getSha("about")
 
         if (shaLicense != shaDB) {
-            Log.v("License: $shaLicense != $shaDB", "DB")
-            // if the DB doesn't have latest commit update the sha and terms
-            if (shaDB == "notGetShaFromDB") {
-                dbHelper?.addSha(fileName = "about", newSha = shaLicense)
-            } else {
-                dbHelper?.updateSha(fileName = "about", newSha = shaLicense)
-            }
+            addOrUpdateSha("license", shaLicense, shaDB)
 
             TermsApi().getLicense().enqueue(object: Callback<ResponseBody> {
                 override fun onFailure(call: Call<ResponseBody>, t: Throwable) {
@@ -252,24 +251,6 @@ class MainActivity : AppCompatActivity() {
         loadingPanel.visibility = GONE
     }
 
-    private fun showAbout(text: String) {
-        textAbout.movementMethod = LinkMovementMethod.getInstance()
-        textAbout.text = removeNewLines(text)
-    }
-
-    private fun showTerms(terms: List<Term>) {
-        recyclerView.layoutManager = LinearLayoutManager(this)
-
-        if(terms.isEmpty()) {
-            var newTerms = mutableListOf<Term>()
-            newTerms.add(Term("404-not-found", TERM_NOT_FOUND))
-            recyclerView.adapter = TermsAdapter(newTerms)
-        } else {
-            recyclerView.adapter = TermsAdapter(terms)
-        }
-
-    }
-
     private fun setLatestCommit() {
         Log.v("setLatestCommit called", "setLatestCommit")
         TermsApi().getLatestCommit().enqueue(object: Callback<ResponseBody>{
@@ -277,7 +258,7 @@ class MainActivity : AppCompatActivity() {
                 shaReadme = "notGetItFromGithub"
                 shaTerms = "notGetItFromGithub"
                 shaLicense = "notGetItFromGithub"
-                Toast.makeText(applicationContext, t.message, Toast.LENGTH_LONG).show()
+                Toast.makeText(applicationContext, NETWORK_ERROR, Toast.LENGTH_LONG).show()
             }
 
             override fun onResponse(call: Call<ResponseBody>, response: Response<ResponseBody>) {
@@ -290,18 +271,15 @@ class MainActivity : AppCompatActivity() {
                     if(shas.contains(name)) {
                         when(name) {
                             "README.md" -> {
-                                var sha = item.getString("sha")
-                                shaReadme = sha
+                                shaReadme = item.getString("sha")
                                 shas.remove("README.md")
                             }
                             "LICENSE" -> {
-                                var sha = item.getString("sha")
-                                shaLicense = sha
+                                shaLicense = item.getString("sha")
                                 shas.remove("LICENSE")
                             }
                             "terms.json" -> {
-                                var sha = item.getString("sha")
-                                shaTerms = sha
+                                shaTerms = item.getString("sha")
                                 shas.remove("Terms.json")
                             }
                         }
@@ -311,6 +289,16 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         })
+    }
+
+    private fun addOrUpdateSha(fileName: String, newSha: String, shaOnDb: String?) {
+        Log.v("Terms: $newSha != $shaOnDb", "DB")
+
+        if (fileName == "notGetShaFromDB") {
+            dbHelper?.addSha(fileName = fileName, newSha = newSha)
+        } else {
+            dbHelper?.updateSha(fileName = fileName, newSha = newSha)
+        }
     }
 
     private fun addTermDB(terms: List<Term>) {
