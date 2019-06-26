@@ -15,6 +15,7 @@ import android.text.Html
 import android.text.TextWatcher
 import android.text.method.LinkMovementMethod
 import android.util.Log
+import android.view.View
 import android.view.View.*
 import android.view.inputmethod.InputMethodManager
 import android.widget.ScrollView
@@ -54,13 +55,14 @@ class MainActivity : AppCompatActivity() {
                 showLoadingPanel()
 
                 fetchReadMe()
+                loadingPanel.visibility = GONE
                 navHome.visibility = VISIBLE
 
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_dictionary -> {
                 showLoadingPanel()
-                etSearch.text.clear()
+                //etSearch.text.clear()
 
                 fetchTerms()
                 navDictionary.visibility = VISIBLE
@@ -100,6 +102,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showLoadingPanel() {
+        Log.v("showLoadingPanel", "show")
         navHome.visibility = GONE
         navDictionary.visibility = GONE
         navAbout.visibility = GONE
@@ -138,12 +141,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showReadMe(text: String) {
+        loadingPanel.visibility = GONE
         textMessage.movementMethod = LinkMovementMethod.getInstance()
         textMessage.text = Html.fromHtml(parseTextLink(text))
     }
 
     private fun showTerms(terms: List<Term>) {
         recyclerView.layoutManager = LinearLayoutManager(this)
+
+        loadingPanel.visibility = GONE
 
         if(terms.isEmpty()) {
             var newTerms = mutableListOf<Term>()
@@ -156,6 +162,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showAbout(text: String) {
+        loadingPanel.visibility = GONE
+
         textAbout.movementMethod = LinkMovementMethod.getInstance()
         textAbout.text = removeNewLines(text)
     }
@@ -184,8 +192,6 @@ class MainActivity : AppCompatActivity() {
             // get it from DB
             dbHelper?.getPageContent("readme")?.let { showReadMe(it) }
         }
-
-        loadingPanel.visibility = GONE
     }
 
     private fun fetchTerms() {
@@ -218,8 +224,6 @@ class MainActivity : AppCompatActivity() {
             // get them from DB
             showSearchResult("")
         }
-
-        loadingPanel.visibility = GONE
     }
 
 
@@ -247,8 +251,6 @@ class MainActivity : AppCompatActivity() {
             // get it from DB
             dbHelper?.getPageContent("about")?.let { showAbout(it) }
         }
-
-        loadingPanel.visibility = GONE
     }
 
     private fun setLatestCommit() {
