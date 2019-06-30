@@ -68,7 +68,7 @@
     "meaning": "Test gerçekleşmesi sırasında tutulan hertürlü kayıt, döküman, vb."
   },
   {
-    "term": "Tets Summary Repor",
+    "term": "Test Summary Report",
     "meaning": "Test sonrasında testin sonuçlarının özet halinde sunulduğu test dökümanı"
   },
   {
@@ -76,12 +76,12 @@
     "meaning": "Test sonrasında ortaya çıkan her türlü test kayıtları, ürünleri, vb. "
   },
   {
-    "term": "Tets Plan",
+    "term": "Test Plan",
     "meaning": "Test sırasında uyulması gereken kuralların bulunduğu test başlamadan önce hazırlanan plan. Test planı testlerin kapsamını, içeriğini, tanımını, zamanlamasını, ihtiyaç duyulan verilerin tanımını, test ortamla bilgilerini, teste başlama ve sonlandırma kriterlerini, kullanılacak test yöntemlerini gibi her türlü bilgiyi içeren bir klavuz niteliğindedir. "
   },
   {
     "term": "COTS (Commercial off-the-shelf)",
-    "meaning": "paket proğramlar"
+    "meaning": "paket programlar"
   },
   {
     "term": "Incremantel developmant model",
@@ -97,15 +97,15 @@
   },
   {
     "term": "Verification",
-    "meaning": "Onaylama (Sağlama, daha uyğun olacağı kanısındayım); testin tanımında kullanılan bir terim. Testler sırasında ürünün istenilen gereksinimleri tam anlamıyla karşılayıp karşılamdığı kontrol edilmelidir. "
+    "meaning": "Onaylama (Sağlama, daha uyğun olacağı kanısındayım); testin tanımında kullanılan bir terim. Testler sırasında ürünün istenilen gereksinimleri tam anlamıyla karşılayıp karşılamadığı kontrol edilmelidir. "
   },
   {
     "term": "V-model",
-    "meaning": "Şelale modele alternatif olarak geliştirilen, testin herbir aşamada olduğu yazılım geliştirme modeli"
+    "meaning": "Şelale modele alternatif olarak geliştirilen, testin her bir aşamada olduğu yazılım geliştirme modeli"
   },
   {
     "term": "Alpha-Beta Testing",
-    "meaning": "Alfa testi, yazılım geliştirme ortamında yapılan kullanıcı kabul testleridir; Beta testi ise kullanıcıların kendi ortamlarında bir fiil uygulamayı kullanarak yaptıkları test aktiviteleridir. Eğer belirli sayıda ve davet ile belli profilde kullanıcılara izin verilerek beta testi amaçlanıyor ise buna closed-beta testi denir; kullanıcılarda herhangi bir sınırlama yok ise open-beta testi olarak adlandırılır."
+    "meaning": "Alfa testi, yazılım geliştirme ortamında yapılan kullanıcı kabul testleridir; Beta testi ise kullanıcıların kendi ortamlarında bilfiil uygulamayı kullanarak yaptıkları test aktiviteleridir. Eğer belirli sayıda ve davet ile belli profilde kullanıcılara izin verilerek beta testi amaçlanıyor ise buna closed-beta testi denir; kullanıcılarda herhangi bir sınırlama yok ise open-beta testi olarak adlandırılır."
   },
   {
     "term": "Component testing, Module Testing",
@@ -113,7 +113,7 @@
   },
   {
     "term": "Driving test analogy",
-    "meaning": "Sürücü, test analojisinde 'driving testi' olarak kullanılır ve test başarısını tarif etmek için kullanılır. Bir yarış düşünüldüğünde, eğer yarışcı çeşitli yollardan geçerek ve çeşitli manevralar yaparken çeşitli kazalar yaparakta olsa yarış sonuna kadar gelebiliyor ise yarışı başarıyla bitirmiş demektir. Benzer bir şekilde, yazılım testinde bulunan hatalar bizi testin sonlandırmamıza neden olacak kadar ciddi değil ise ve en sonunda çalışan bir uygulama olarak devam edeviliyor ise test başarılıdır demektir. "
+    "meaning": "Sürücü, test analojisinde 'driving testi' olarak kullanılır ve test başarısını tarif etmek için kullanılır. Bir yarış düşünüldüğünde, eğer yarışcı çeşitli yollardan geçerek ve çeşitli manevralar yaparken çeşitli kazalar yaparak da olsa yarış sonuna kadar gelebiliyor ise yarışı başarıyla bitirmiş demektir. Benzer bir şekilde, yazılım testinde bulunan hatalar bizi testin sonlandırmamıza neden olacak kadar ciddi değil ise ve en sonunda çalışan bir uygulama olarak devam edeviliyor ise test başarılıdır demektir. "
   },
   {
     "term": "Driver",
@@ -124,7 +124,7 @@
     "meaning": "Fonksiyonel Gereksinimler. Bakınız, requirement"
   },
   {
-    "term": "İntegration testing",
+    "term": "Integration testing",
     "meaning": "Entegrasyon testi. Birden fazla birim, komponent, modül veya sistemin bir arada nasıl çalıştığını test etmek için yapılan testlerdir. Birim entegrasyon, component entegrasyon veya sistem entegrasyon olarak adlandırılır."
   },
   {
@@ -145,7 +145,7 @@
   },
   {
     "term": "Stub",
-    "meaning": "Bir birimi test etmek için hazırlanmış proğram parçaları. Bir birimi test ekmek için başka bir birime veya sisteme ihtiyaç duyuması durumunda birimin izole olarak test edilebilmesi için bu gibi bağımlılıkları ortadan kaldırmak gerekir. Stub, fake, mock bu ihtiyaçları karşılar. Stub genelde henüz entegrasyonu yapılmamış bir birimin yerine kullanıbilen basit nesnelerdir."
+    "meaning": "Bir birimi test etmek için hazırlanmış program parçaları. Bir birimi test etmek için başka bir birime veya sisteme ihtiyaç duyulması durumunda birimin izole olarak test edilebilmesi için bu gibi bağımlılıkları ortadan kaldırmak gerekir. Stub, fake, mock bu ihtiyaçları karşılar. Stub genelde henüz entegrasyonu yapılmamış bir birimin yerine kullanıbilen basit nesnelerdir."
   },
   {
     "term": "System testing",
@@ -165,11 +165,11 @@
   },
   {
     "term": "Black-box testing",
-    "meaning": "Kara kutu testleri. Yazılımın iç yapısını; kod, algoritma, vb. Bilinmeden yapılan testlerdir. Bakınız, white-box testing"
+    "meaning": "Kara kutu testleri. Yazılımın iç yapısını; kod, algoritma, vb. bilinmeden yapılan testlerdir. Bakınız, white-box testing"
   },
   {
     "term": "Code coverage",
-    "meaning": "Yazılan kodların nekadarının çalıştırıldığını ve nekadarının çalıştırılmadığını kontrol eden testler bütünü"
+    "meaning": "Yazılan kodların ne kadarının çalıştırıldığını ve ne kadarının çalıştırılmadığını kontrol eden testler bütünü"
   },
   {
     "term": "Re-testing",
@@ -180,16 +180,16 @@
     "meaning": "Fonksiyonel testler"
   },
   {
-    "term": "Iteroperability Testing",
+    "term": "Interoperability Testing",
     "meaning": "Birim veya sistemlerin birlikte çalışabilmelerinin testi"
   },
   {
     "term": "Load Testing",
-    "meaning": "Yük testi, belli bir yükte(yogunlukta) yazılımın verdiği cevaplardır."
+    "meaning": "Yük testi, belli bir yükte (yoğunlukta) yazılımın verdiği cevaplardır."
   },
   {
     "term": "Maintainability Testing",
-    "meaning": "Bakım yapılmasına nekadar uygun olduğu, güncellemenin maliyeti gibi testlerdir."
+    "meaning": "Bakım yapılmasına ne kadar uygun olduğu, güncellemenin maliyeti gibi testlerdir."
   },
   {
     "term": "Regression Testing",
@@ -204,12 +204,12 @@
     "meaning": "Taşınabilirlik testleri"
   },
   {
-    "term": "Reliabity Testing",
+    "term": "Reliability Testing",
     "meaning": "Tutarlılık testleri"
   },
   {
     "term": "Security Testing",
-    "meaning": "Güvelik testleri"
+    "meaning": "Güvenlik testleri"
   },
   {
     "term": "Specification-based Testing",
@@ -237,7 +237,7 @@
   },
   {
     "term": "Statik Testing (Statik Testler)",
-    "meaning": "Yazılımın kodu çalıştırılmadan, yazılımın kalitesiyle ilgili detaylarının tartışıldığı genelde kod seviyesinde olan ve yazılımcının kendi hatalarını bulması şeklinde gerçekleşen yazılım test aktiviteleridir. Genelde düşünce hatası(error, mistake) bulunur. Statik testler aynı zamanda gereksinimlere karşıda yapılabilir. Yani hazırlanın bir geliştirme talebinin ne kadar uygulanabilir olduğunu statik testler ile yakalanabilir. Gereksinimler yerinde ve tamamen test edilebilir mi? gibi sorular sorarak istekler statik olarak test edilebilir. Bu aktivitiler daha geliştirme aşamasının başında yapılması durumunda çok verimli sonuçlar çıkarabilir ve yazılım geliştirme maliyetlerini düşürebilir."
+    "meaning": "Yazılımın kodu çalıştırılmadan, yazılımın kalitesiyle ilgili detaylarının tartışıldığı genelde kod seviyesinde olan ve yazılımcının kendi hatalarını bulması şeklinde gerçekleşen yazılım test aktiviteleridir. Genelde düşünce hatası(error, mistake) bulunur. Statik testler aynı zamanda gereksinimlere karşı da yapılabilir. Yani hazırlanın bir geliştirme talebinin ne kadar uygulanabilir olduğu statik testler ile yakalanabilir. Gereksinimler yerinde ve tamamen test edilebilir mi? gibi sorular sorarak istekler statik olarak test edilebilir. Bu aktivitiler daha geliştirme aşamasının başında yapılması durumunda çok verimli sonuçlar çıkarabilir ve yazılım geliştirme maliyetlerini düşürebilir."
   },
   {
     "term": "Dynamic Testing (Dinamik Testler)",
@@ -253,7 +253,7 @@
   },
   {
     "term": "Exit Criteria (Testi sonlandırma kriterleri)",
-    "meaning": "Yeterli miktarda test yapılip yapılmadığının anlaşılması için konulan kriterlere testi sonlandırma kriterleri denir. Risk yönetimi yapmak daha sağlıklı sonuçlar verir."
+    "meaning": "Yeterli miktarda test yapılıp yapılmadığının anlaşılması için konulan kriterlere testi sonlandırma kriterleri denir. Risk yönetimi yapmak daha sağlıklı sonuçlar verir."
   },
   {
     "term": "Formal Review (Formal gözden geçirme)",
@@ -265,11 +265,11 @@
   },
   {
     "term": "Desk Check",
-    "meaning": "Bir çeşit statik testtir, gereksinimlerin doğru anlaşılığ anlaşılmadığı yazılımcı ve test mühendi tarafından gözden geçirilir, gerekli bilgi paylaşımı yapılır."
+    "meaning": "Bir çeşit statik testtir, gereksinimlerin doğru anlaşılıp anlaşılmadığı yazılımcı ve test mühendisi tarafından gözden geçirilir, gerekli bilgi paylaşımı yapılır."
   },
   {
     "term": "Inspection (İnceleme)",
-    "meaning": "Kuralları olan ve bulguların raporlandığı ve bir lider tarafından yönetilen bireysel veya grubca yapılan gözden geçirme toplantılarıdır."
+    "meaning": "Kuralları olan ve bulguların raporlandığı ve bir lider tarafından yönetilen bireysel veya grupça yapılan gözden geçirme toplantılarıdır."
   },
   {
     "term": "Moderator (Moderatör)",
@@ -285,7 +285,7 @@
   },
   {
     "term": "Technical Review (Teknik gözden geçirmeler)",
-    "meaning": "Kod, sistem gereksinimleri, database tasarımı gibi teknik konuların tartışıldığı toplantılardır. Teknik gözden geçirmelerin sorunu çözmek, alternatif çözümler üzerine tartışmak ve en efektifine çözüme karar vermek, kurallara uygunluğu denetlemek gibi amaçları olabilir."
+    "meaning": "Kod, sistem gereksinimleri, database tasarımı gibi teknik konuların tartışıldığı toplantılardır. Teknik gözden geçirmelerin sorunu çözmek, alternatif çözümler üzerine tartışmak ve en efektif çözüme karar vermek, kurallara uygunluğu denetlemek gibi amaçları olabilir."
   },
   {
     "term": "Walkthrough",
@@ -297,7 +297,7 @@
   },
   {
     "term": "Cyclomatic Complexity",
-    "meaning": "Yazılan kodun nekadar karmaşık olduğunu gösteren bir parametre."
+    "meaning": "Yazılan kodun ne kadar karmaşık olduğunu gösteren bir parametre."
   },
   {
     "term": "Control Flow (Akış şeması)",
@@ -305,7 +305,7 @@
   },
   {
     "term": "Data Flow (Veri Akışı)",
-    "meaning": "Veri akışını (oluşturma – kullanma – yoketme) adımlarını soyut bir şekilde anlatan akış şemalarıdır."
+    "meaning": "Veri akışını (oluşturma – kullanma – yok etme) adımlarını soyut bir şekilde anlatan akış şemalarıdır."
   },
   {
     "term": "Static Analysis (Statik analiz)",
@@ -317,22 +317,22 @@
   },
   {
     "term": "Test case specification (Test Kase Açıklaması)",
-    "meaning": "Bir grub test case için (test set) hazırlanmış ve o test seti koşturmak için gerekli bilgileri içeren dökümandır."
+    "meaning": "Bir grup test case için (test set) hazırlanmış ve o test seti koşturmak için gerekli bilgileri içeren dökümandır."
   },
   {
     "term": "Test condition (Test Koşulu)",
-    "meaning": "Bir veya birden fazla test casenin koşturulması için gerekli koşullar."
+    "meaning": "Bir veya birden fazla test casein koşturulması için gerekli koşullar."
   },
   {
     "term": "Test data (Test Verisi)",
-    "meaning": "Test caseleri koşturmak için kullanılan veriler (kullanıcı bilgilieri, şifre, kupon, kod, numara, vb.)"
+    "meaning": "Test caseleri koşturmak için kullanılan veriler (kullanıcı bilgileri, şifre, kupon, kod, numara, vb.)"
   },
   {
     "term": "Test procedure specification (Test Koşturma Adımları)",
     "meaning": "Test caseleri koşturmak için yapılması gerekenlerin (test steps) sıralı bir şekilde (adım-adım) verildiği döküman."
   },
   {
-    "term": "Tets script",
+    "term": "Test script",
     "meaning": "Test caseleri otomatik koşturmak için yazılmış kod parçaları."
   },
   {
@@ -341,11 +341,11 @@
   },
   {
     "term": "BB Test Design Tech. (Black Box – Kara Kutu Test Teknikleri)",
-    "meaning": "Yazılımın fonksyionları test edilir. Yazılımın iç yapısı (kod, database, aktarım, vb.) görülmediği için kullanıcı gibi test test edilir, bu yüzden kara-kutu testler denir. Girişlere karşılık gelen çıkışlar kontrol edilir, hatalı çıkışlar saptanır."
+    "meaning": "Yazılımın fonksiyonları test edilir. Yazılımın iç yapısı (kod, database, aktarım, vb.) görülmediği için kullanıcı gibi test edilir, bu yüzden kara-kutu testler denir. Girişlere karşılık gelen çıkışlar kontrol edilir, hatalı çıkışlar saptanır."
   },
   {
     "term": "Exp. Based Design Tech. (Experience Based – Deneyim Temelli Test Teknikleri)",
-    "meaning": "Testcilerin deneyimlerinden yola çıkarak test edilir. Farklı alanlar için farklı test metodlar kullanılır. Hataların öbekleşmesi (defect clustering) bu test tekniğinde önemli yeralır."
+    "meaning": "Testcilerin deneyimlerinden yola çıkarak test edilir. Farklı alanlar için farklı test metodlar kullanılır. Hataların öbekleşmesi (defect clustering) bu test tekniğinde önemli yer alır."
   },
   {
     "term": "Spec. Based Design Tech. (Specification Based – Fonksiyon Temelli Test Teknikleri)",
@@ -361,18 +361,18 @@
   },
   {
     "term": "Boundary Value Analysis (Sınır Değer Analizi)",
-    "meaning": "Sınır değerler kontrol edilir. Örneğin"
+    "meaning": "Sınır değerler kontrol edilir."
   },
   {
     "term": "Decision Table Testing (Karar Tablosu Testi)",
-    "meaning": "Eğer kontrol edilecek çok sayıda durum var ise her bir durumu tablo içerisine alınır ve herbir duruma karşı yazılımın vericeği cevaplar yine tabloya yerleştirilerek karar tablosu oluşturulur."
+    "meaning": "Eğer kontrol edilecek çok sayıda durum var ise her bir durumu tablo içerisine alınır ve herbir duruma karşı yazılımın vereceği cevaplar yine tabloya yerleştirilerek karar tablosu oluşturulur."
   },
   {
     "term": "Equivalence Partitioning (Eşdeğer Aralık Test)",
-    "meaning": "Aynı sonuçlar üreten girdiler gruplanarak sadece farklı sonuçlar üreten giriş değerleri grublanmış sınırlandırılmış olur. Test için her bir gruptan bir giriş değerini kullanmak yeterli olacaktır. Örneğin"
+    "meaning": "Aynı sonuçlar üreten girdiler gruplanarak sadece farklı sonuçlar üreten giriş değerleri gruplanmış sınırlandırılmış olur. Test için her bir gruptan bir giriş değerini kullanmak yeterli olacaktır."
   },
   {
-    "term": "State Transition Testing (Durum Ğeçiş Testi)",
+    "term": "State Transition Testing (Durum Geçiş Testi)",
     "meaning": "Yazılımın durum geçişi gösterdiği yerlerin testleridir."
   },
   {
@@ -385,10 +385,10 @@
   },
   {
     "term": "Decision Coverage (Kontrol Noktalarının Kapsamı)",
-    "meaning": "Kod içerisinde nekadar döngünün çalıştırıldığını göstermek için kullanılan bir birimdir. Çalıştırılan toplam döngülerin koddaki tüm döngülere oranı ile bulunur"
+    "meaning": "Kod içerisinde ne kadar döngünün çalıştırıldığını göstermek için kullanılan bir birimdir. Çalıştırılan toplam döngülerin koddaki tüm döngülere oranı ile bulunur"
   },
   {
-    "term": "Statement Coverage (Tüm Noktoların Kapsamı)",
+    "term": "Statement Coverage (Tüm Noktaların Kapsamı)",
     "meaning": "koddaki ifadelerin çalıştırma oranını bulmak için kullanılan bir birimdir."
   },
   {
@@ -409,14 +409,14 @@
   },
   {
     "term": "Entry criteria (Teste başlama kriteri)",
-    "meaning": "Geliştirmenin belli bir olgunluga erişip (smoke testten geçebilen) test alınması için gerekli kriterlerdir."
+    "meaning": "Geliştirmenin belli bir olgunluğa erişip (smoke testten geçebilen) test alınması için gerekli kriterlerdir."
   },
   {
     "term": "Exit Criteria (Testi sonlandırma kriterleri)",
-    "meaning": "Yeterli miktarda test yapılip yapılmadığının anlaşılması için konulan kriterlere testi sonlandırma kriterleri denir. Risk yönetimi yapmak daha sağlıklı sonuçlar verir."
+    "meaning": "Yeterli miktarda test yapılıp yapılmadığının anlaşılması için konulan kriterlere testi sonlandırma kriterleri denir. Risk yönetimi yapmak daha sağlıklı sonuçlar verir."
   },
   {
-    "term": "Tets Plan (Test Planı)",
+    "term": "Test Plan (Test Planı)",
     "meaning": "Test sırasında uyulması gereken kuralların bulunduğu test başlamadan önce hazırlanan plan"
   },
   {
@@ -425,15 +425,15 @@
   },
   {
     "term": "Test Approach (Test Yaklaşımı)",
-    "meaning": "Hangi tip test grubunun hazırlanacağını tanımlayan firmanın benimsediği test methodlarının seçmmeye yarayan yöntemlerdir."
+    "meaning": "Hangi tip test grubunun hazırlanacağını tanımlayan firmanın benimsediği test metodlarının seçmeye yarayan yöntemlerdir."
   },
   {
     "term": "Test Strategy (Test Stratejisi)",
-    "meaning": "Test yaklaşımında belirlenen test türlerinin işletilmesi, teste başlama, testi sonladırma kritleri, hata raporlaması, vb içerisine alan test yönetimi."
+    "meaning": "Test yaklaşımında belirlenen test türlerinin işletilmesi, teste başlama, testi sonladırma kriterleri, hata raporlaması, vb içerisine alan test yönetimi."
   },
   {
     "term": "Test Procedure (Test Adımları)",
-    "meaning": "Testi işletmek için gerekli olan adımların anlatıldığı döküman."
+    "meaning": "Testi işletmek için gerekli olan adımların anlatıldığı doküman."
   },
   {
     "term": "Defect Density (Hata Yoğunluğu)",
@@ -449,7 +449,7 @@
   },
   {
     "term": "Test Coverage (Test Kapsamı)",
-    "meaning": "Mevcut test caselerin yazılımın nekadarını test ettiğini gösteren bir birim"
+    "meaning": "Mevcut test caselerin yazılımın ne kadarını test ettiğini gösteren bir birim"
   },
   {
     "term": "Test Monitoring (Test Görüntüleme)",
@@ -457,10 +457,10 @@
   },
   {
     "term": "Test Report (Test Raporu)",
-    "meaning": "Testlerin tamamlanmasına mütakip çıkan sonuçların özet halinde sunulduğu rapor."
+    "meaning": "Testlerin tamamlanmasına müteakip çıkan sonuçların özet halinde sunulduğu rapor."
   },
   {
-    "term": "Configuration Manegement (Konfigürasyon Yönetimi)",
+    "term": "Configuration Management (Konfigürasyon Yönetimi)",
     "meaning": "Sistem içerisindeki tüm ekipman ve yazılımların (hardware and software) kontrol edildiği yönetim araçlarına konfigürasyon yönetimi denir."
   },
   {
@@ -481,7 +481,7 @@
   },
   {
     "term": "Risk Based Testing (Risk Temelli Test)",
-    "meaning": "Riskleri bilerek ve riskleri göz önünde tutarak test eforunu taksim etmek ve testleri yapmak riskin yüksek olduğu yerlerde yoğunlaştırmayı amaçyan test yaklaşımı (test approach)."
+    "meaning": "Riskleri bilerek ve riskleri göz önünde tutarak test eforunu taksim etmek ve testleri yapmak riskin yüksek olduğu yerlerde yoğunlaştırmayı amaçlayan test yaklaşımı (test approach)."
   },
   {
     "term": "Incident Logging (Vaka Kaydı)",
@@ -493,7 +493,7 @@
   },
   {
     "term": "Debugging Tool (Hata Ayıklama Araçları – Debuging Araçları)",
-    "meaning": "Proğramcıların hataları oluşturmak, araştırmak ve ayıklamak veya proğramları adım adım çalıştırmak için kullandıkları araçlardır."
+    "meaning": "Programcıların hataları oluşturmak, araştırmak ve ayıklamak veya programları adım adım çalıştırmak için kullandıkları araçlardır."
   },
   {
     "term": "Driver",
@@ -501,19 +501,19 @@
   },
   {
     "term": "Probe Effect (Ölçücü Etkisi)",
-    "meaning": "Test amacıyla kullanılan bir araç test edilen biriminin üzerine bir etki bırakır. Test sonuçlarına yansıyan bu etkiye ölçücü (probe) etkisi denir. Performans ölçen araçların performansı ölçülen ürün üzerine olumsuz etkisi gibi. Kod coverage yapan bir aracın kodu incelemeye alması ve bazı kodları dahil edememesi gibi durumda başka bir örnektir. Daha uç bir örnek ise debugging yapan bir aracın varlığında hatanın bulunamaması yani hatanın oluşması için debuggerin çalışmıyo olması koşuludur. Bu probe effect Heizenberg’in uncertainity princible (belirsizlik kuralı) ile Heizenbugs adını almıştır."
+    "meaning": "Test amacıyla kullanılan bir araç test edilen biriminin üzerine bir etki bırakır. Test sonuçlarına yansıyan bu etkiye ölçücü (probe) etkisi denir. Performans ölçen araçların performansı ölçülen ürün üzerine olumsuz etkisi gibi. Kod coverage yapan bir aracın kodu incelemeye alması ve bazı kodları dahil edememesi gibi durumda başka bir örnektir. Daha uç bir örnek ise debugging yapan bir aracın varlığında hatanın bulunamaması yani hatanın oluşması için debuggerin çalışmıyo olması koşuludur. Bu probe effect Heisenberg’in uncertainity princible (belirsizlik kuralı) ile Heisenbugs adını almıştır."
   },
   {
     "term": "Stub",
-    "meaning": "Yazılımın işletilemeyen kısmında tanımlı bir fonksiyon görevi gören ve o fonksiyon çalıştırılmadan proğramcının istediği sonucu üreten kod parçalarıdır. Programı test etmek amacıyla doğru çalıştığından emin olunmayan fonksiyonları taklit ederek geriye kalan kısımlar test edilir."
+    "meaning": "Yazılımın işletilemeyen kısmında tanımlı bir fonksiyon görevi gören ve o fonksiyon çalıştırılmadan programcının istediği sonucu üreten kod parçalarıdır. Programı test etmek amacıyla doğru çalıştığından emin olunmayan fonksiyonları taklit ederek geriye kalan kısımlar test edilir."
   },
   {
     "term": "Data Driven Testing",
-    "meaning": "Testler otomasyonla işletilir. Test için veriler giriş (input) ve çıkış (expected result) bir tabloya girilir ve otomasyon proğramı buradaki verileri kullanarak yazılım test edilir."
+    "meaning": "Testler otomasyonla işletilir. Test için veriler giriş (input) ve çıkış (expected result) bir tabloya girilir ve otomasyon programı buradaki verileri kullanarak yazılım test edilir."
   },
   {
     "term": "Keyword Driven Testing",
-    "meaning": "Fonksiyonel bazlı kelimeler üzerinden test case oluşturularak otomatik test yöntemidir. Login- createUser - logout gibi her bir kelimenin kendisi test case olacak şekilde test scriptleri hazırlanır ve senaryoya uygun kombinasyonlarla test oluşturulur."
+    "meaning": "Fonksiyonel bazlı kelimeler üzerinden test case oluşturularak otomatik test yöntemidir. Login - createUser - logout gibi her bir kelimenin kendisi test case olacak şekilde test scriptleri hazırlanır ve senaryoya uygun kombinasyonlarla test oluşturulur."
   },
   {
     "term": "Scripting Language (Scripting Dili)",
