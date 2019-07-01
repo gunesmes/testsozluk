@@ -147,6 +147,10 @@
     "term": "Stub",
     "meaning": "Bir birimi test etmek için hazırlanmış program parçaları. Bir birimi test etmek için başka bir birime veya sisteme ihtiyaç duyulması durumunda birimin izole olarak test edilebilmesi için bu gibi bağımlılıkları ortadan kaldırmak gerekir. Stub, fake, mock bu ihtiyaçları karşılar. Stub genelde henüz entegrasyonu yapılmamış bir birimin yerine kullanıbilen basit nesnelerdir."
   },
+   { 
+   "term": "Stubbing, mocking", 
+   "meaning": "Yazılımın işletilemeyen kısmında tanımlı bir fonksiyon görevi gören ve o fonksiyon çalıştırılmadan proğramcının istediği sonucu üreten kod parçalarıdır. Programı test etmek amacıyla doğru çalıştığından emin olunmayan fonksiyonları taklit ederek geriye kalan kısımlar test edilir." 
+  },
   {
     "term": "System testing",
     "meaning": "Sistem tesleri, entegre çalışan sistemlerin genel amaçlı ve tüm uygulamayı kapsayan testlerdir."
@@ -502,10 +506,6 @@
   {
     "term": "Probe Effect (Ölçücü Etkisi)",
     "meaning": "Test amacıyla kullanılan bir araç test edilen biriminin üzerine bir etki bırakır. Test sonuçlarına yansıyan bu etkiye ölçücü (probe) etkisi denir. Performans ölçen araçların performansı ölçülen ürün üzerine olumsuz etkisi gibi. Kod coverage yapan bir aracın kodu incelemeye alması ve bazı kodları dahil edememesi gibi durumda başka bir örnektir. Daha uç bir örnek ise debugging yapan bir aracın varlığında hatanın bulunamaması yani hatanın oluşması için debuggerin çalışmıyo olması koşuludur. Bu probe effect Heisenberg’in uncertainity princible (belirsizlik kuralı) ile Heisenbugs adını almıştır."
-  },
-  {
-    "term": "Stub",
-    "meaning": "Yazılımın işletilemeyen kısmında tanımlı bir fonksiyon görevi gören ve o fonksiyon çalıştırılmadan programcının istediği sonucu üreten kod parçalarıdır. Programı test etmek amacıyla doğru çalıştığından emin olunmayan fonksiyonları taklit ederek geriye kalan kısımlar test edilir."
   },
   {
     "term": "Data Driven Testing",
