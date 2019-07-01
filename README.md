@@ -5,3 +5,10 @@ Yazılım test mühendisliği düşünüldüğünde ISTQB, ISEB, IEEE gibi kurul
 Çeşitli kaynaklardan derlenerek hazırlanan [Test Eğitim 1](https://www.slideshare.net/MesutGne/test-mhendisliine-giri-eitimi-blm-1) ve [Test Eğitim 2](https://www.slideshare.net/MesutGne/test-mhendisliine-giri-eitimi-blm-2) isimli çalışmanın bir parçası olan "Test Sözlüğü" çalışmasında test mühendisliğinde sıkça karşılaşılan kelimelerin/terimlerin Türkçe karşılıklarını ve bazılarının kısa açıklamalarını bulabilirsiniz. Daha fazla bilgi için [Test Risk](http://www.testrisk.com) blog postlarını okuyabilirsiniz.
 
 Eksik ve/veya yanlış olduğunu düşündüğünüz terimleri düzelterek veya yeni terimler ekleyerek katkı sağlamak için GitHub üzerinde [Test Sözlük](https://github.com/gunesmes/testsozluk) projesine (PR) istek gönderebilirsiniz. Bu sayede bu sözlüğün gelişmesine katkı sağlabilirsiniz.
+
+Kaynak ve referanslar (Kaynak tavsiylerinin buraya ekleyebilirsiniz):
+ * [Test Eğitim 1](https://www.slideshare.net/MesutGne/test-mhendisliine-giri-eitimi-blm-1)
+ * [Test Eğitim 2](https://www.slideshare.net/MesutGne/test-mhendisliine-giri-eitimi-blm-2)
+ * [ISTQB Foundation Level 2018 Syllabus](https://www.istqb.org/downloads/send/51-ctfl2018/208-ctfl-2018-syllabus.html)
+ * [ISTQB Advanced Level Syllabus (2012) Technical Test Analyst](https://www.istqb.org/downloads/send/10-advanced-level-syllabus-2012/55-advanced-level-syllabus-2012-technical-test-analyst.html)
+ * [ISTQB Expert Level Syllabus - Improving the Testing Process (2011)](https://www.istqb.org/downloads/send/12-expert-level-documents/75-expert-level-syllabus-improving-the-testing-process-2011.html)
