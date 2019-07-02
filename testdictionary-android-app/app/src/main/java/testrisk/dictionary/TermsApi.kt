@@ -8,10 +8,11 @@ import retrofit2.http.GET
 import retrofit2.http.Headers
 
 const val BASE_URL = "https://raw.githubusercontent.com/"
+const val BRANCH = "master"
 
 interface TermsApi {
 
-    @GET("/gunesmes/testsozluk/master/terms.json")
+    @GET("/gunesmes/testsozluk/$BRANCH/terms.json")
     fun getTerms() : Call<List<Term>>
 
     companion object {
@@ -25,13 +26,13 @@ interface TermsApi {
     }
 
     @Headers("Content-Type: text/plain")
-    @GET("/gunesmes/testsozluk/master/README.md")
+    @GET("/gunesmes/testsozluk/$BRANCH/README.md")
     fun getReadMe(): Call<ResponseBody>
 
     @Headers("Content-Type: text/plain")
-    @GET("/gunesmes/testsozluk/master/LICENSE")
+    @GET("/gunesmes/testsozluk/$BRANCH/LICENSE")
     fun getLicense(): Call<ResponseBody>
 
-    @GET("https://api.github.com/repos/gunesmes/testsozluk/contents?ref=master")
+    @GET("https://api.github.com/repos/gunesmes/testsozluk/contents?ref=$BRANCH")
     fun getLatestCommit(): Call<ResponseBody>
 }
