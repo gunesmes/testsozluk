@@ -1,4 +1,5 @@
 ![Test Sozluk](testdictionary-android-app/app/src/main/res/drawable/dictionary.png)
+
 Daha iyi bir iletişim için kişilerin birbirlerini daha iyi anlaması, yani ortak bir dil kullanması gerekir. Bu ise kullanılan terimlerin ve özel kelimelerin herkes tarafından aynı anlamda kullanılmasıyla olabilir. Test Mühendisi olarak, farklı gruplara (farklı yazılım disiplinlerine) köprü görevi gören bir disiplinde aynı şeyleri söyleyip aynı şeyleri anlamak daha önemlidir. 
 
 Yazılım test mühendisliği düşünüldüğünde ISTQB, ISEB, IEEE gibi kuruluşlar ve çok sayıda profesyonelin kişisel katkılarının olduğu bir disiplinde her şey İngilizce olarak öğretilmektedir. Bundan dolayı terimlerin Türkçe'ye aktarılması sırasında anlam yanlışlıkları yapılabilmektedir. Buradaki sorun terimlerin İngilizce olmasının yanında konunun zor olmasından da kaynaklanmaktadır. Mesleğe yeni adım atmış bir mühendis eğitim hayatı boyunca test ile ilgili çok az veya hiçbir şey görmemiş olabiliyor. Esas görevi test olmayan developer, analist, ürün sahibi gibi roller ise bu terimleri farklı kaynaklardan dolayı yanlış veya hatalı kullanabiliyor. 
