@@ -12,12 +12,14 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.text.Editable
 import android.text.Html
+import android.text.Spanned
 import android.text.TextWatcher
 import android.text.method.LinkMovementMethod
 import android.util.Log
 import android.view.View
 import android.view.View.*
 import android.view.inputmethod.InputMethodManager
+import android.widget.ImageView
 import android.widget.ScrollView
 import android.widget.TextView
 import android.widget.Toast
@@ -28,6 +30,7 @@ import org.json.JSONObject
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -142,8 +145,29 @@ class MainActivity : AppCompatActivity() {
 
     private fun showReadMe(text: String) {
         loadingPanel.visibility = GONE
+        val text2 =
+            """
+<p>![Test Sozluk](testdictionary-android-app/app/src/main/res/drawable/dictionary.png) Daha iyi bir iletişim i&ccedil;in kişilerin birbirlerini daha iyi anlaması, yani ortak bir dil kullanması gerekir. Bu ise kullanılan terimlerin ve &ouml;zel kelimelerin herkes tarafından aynı anlamda kullanılmasıyla olabilir. Test M&uuml;hendisi olarak, farklı gruplara (farklı yazılım disiplinlerine) k&ouml;pr&uuml; g&ouml;revi g&ouml;ren bir disiplinde aynı şeyleri s&ouml;yleyip aynı şeyleri anlamak daha &ouml;nemlidir. Yazılım test m&uuml;hendisliği d&uuml;ş&uuml;n&uuml;ld&uuml;ğ&uuml;nde ISTQB, ISEB, IEEE gibi kuruluşlar ve &ccedil;ok sayıda profesyonelin kişisel katkılarının olduğu bir disiplinde her şey İngilizce olarak &ouml;ğretilmektedir. Bundan dolayı terimlerin T&uuml;rk&ccedil;e'ye aktarılması sırasında anlam yanlışlıkları yapılabilmektedir. Buradaki sorun terimlerin İngilizce olmasının yanında konunun zor olmasından da kaynaklanmaktadır. Mesleğe yeni adım atmış bir m&uuml;hendis eğitim hayatı boyunca test ile ilgili &ccedil;ok az veya hi&ccedil;bir şey g&ouml;rmemiş olabiliyor. Esas g&ouml;revi test olmayan developer, analist, &uuml;r&uuml;n sahibi gibi roller ise bu terimleri farklı kaynaklardan dolayı yanlış veya hatalı kullanabiliyor. &Ccedil;eşitli kaynaklardan derlenerek hazırlanan <a href="https://www.slideshare.net/MesutGne/test-mhendisliine-giri-eitimi-blm-1">Test Eğitim 1</a> ve <a href="https://www.slideshare.net/MesutGne/test-mhendisliine-giri-eitimi-blm-2">Test Eğitim 2</a> isimli &ccedil;alışmanın bir par&ccedil;ası olan "Test S&ouml;zl&uuml;ğ&uuml;" &ccedil;alışmasında test m&uuml;hendisliğinde sık&ccedil;a karşılaşılan kelimelerin/terimlerin T&uuml;rk&ccedil;e karşılıklarını ve bazılarının kısa a&ccedil;ıklamalarını bulabilirsiniz. Daha fazla bilgi i&ccedil;in <a href="http://www.testrisk.com">Test Risk</a> blog postlarını okuyabilirsiniz. Eksik ve/veya yanlış olduğunu d&uuml;ş&uuml;nd&uuml;ğ&uuml;n&uuml;z terimleri d&uuml;zelterek veya yeni terimler ekleyerek katkı sağlamak i&ccedil;in GitHub &uuml;zerinde <a href="https://github.com/gunesmes/testsozluk">Test S&ouml;zl&uuml;k</a> projesine (PR) istek g&ouml;nderebilirsiniz. Bu sayede bu s&ouml;zl&uuml;ğ&uuml;n gelişmesine katkı sağlabilirsiniz.</p>
+<p><b>Katkı Sağlanabilecek Alanlar:</b></p>
+<ul style="list-style-type: circle;">
+<li>S&ouml;zl&uuml;kledeki terimlere <a href="https://github.com/gunesmes/testsozluk/blob/master/terms.json"> terms.json</a> ekleme/d&uuml;zeltme</li>
+<li>Android uygulaması (Kotlin, Java) d&uuml;zeltme/yeni &ouml;zellik ekleme <a href="https://github.com/gunesmes/testsozluk/tree/master/testdictionary-android-app/app">testdictionary-android-app/app</a></li>
+<li>Android uygulaması unit test (Kotlin, Junit) d&uuml;zeltme/yeni test ekleme <a href="https://github.com/gunesmes/testsozluk/tree/master/testdictionary-android-app/app/src/test/java/testrisk/dictionary">testdictionary-android-app/app</a></li>
+<li>Android uygulaması instrumentation test (Kotlin, Espresso, Junit) d&uuml;zeltme/yeni test ekleme <a href="https://github.com/gunesmes/testsozluk/tree/master/testdictionary-android-app/app/src/testAndroid/java/testrisk/dictionary">testdictionary-android-app/app</a></li>
+<li>iOS uygulaması</li>
+</ul>
+<p><b>Kaynak ve referanslar (Kaynak tavsiylerini buraya ekleyebilirsiniz):</b></p>
+<ul>
+<li><a href="https://www.slideshare.net/MesutGne/test-mhendisliine-giri-eitimi-blm-1">Test Eğitim 1</a></li>
+<li><a href="https://www.slideshare.net/MesutGne/test-mhendisliine-giri-eitimi-blm-2">Test Eğitim 2</a></li>
+<li><a href="https://www.istqb.org/downloads/send/51-ctfl2018/208-ctfl-2018-syllabus.html">ISTQB Foundation Level 2018 Syllabus</a></li>
+<li><a href="https://www.istqb.org/downloads/send/10-advanced-level-syllabus-2012/55-advanced-level-syllabus-2012-technical-test-analyst.html">ISTQB Advanced Level Syllabus (2012) Technical Test Analyst</a></li>
+<li><a href="https://www.istqb.org/downloads/send/12-expert-level-documents/75-expert-level-syllabus-improving-the-testing-process-2011.html">ISTQB Expert Level Syllabus - Improving the Testing Process (2011)</a></li>
+</ul>
+        """.trimIndent()
         textMessage.movementMethod = LinkMovementMethod.getInstance()
-        textMessage.text = Html.fromHtml(parseTextLink(text))
+        textMessage.text = Html.fromHtml(boldTitle(removeImage(parseTextLink(text))))
+        //textMessage.text = Html.fromHtml(text)
     }
 
     private fun showTerms(terms: List<Term>) {
