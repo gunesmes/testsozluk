@@ -2,6 +2,7 @@ package testrisk.dictionary
 
 import DBHelper
 import android.content.Context
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.os.Handler
@@ -65,7 +66,7 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.navigation_dictionary -> {
                 showLoadingPanel()
-                //etSearch.text.clear()
+                etSearch.text.clear()
 
                 fetchTerms()
                 navDictionary.visibility = VISIBLE
@@ -122,14 +123,27 @@ class MainActivity : AppCompatActivity() {
     }
 
     @RequiresApi(Build.VERSION_CODES.N)
+    override fun onStart() {
+        super.onStart()
+        Log.v("onStart called", "onstart")
+    }
+
+    @RequiresApi(Build.VERSION_CODES.N)
     override fun onCreate(savedInstanceState: Bundle?) {
         Log.v("oncreate called", "oncreate")
+        //setLatestCommit()
+
         val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
         StrictMode.setThreadPolicy(policy)
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val navView: BottomNavigationView = findViewById(R.id.nav_view)
+
+        var bundle = getIntent()
+        shaTerms = bundle.getStringExtra("shaTerms")
+        shaReadme = bundle.getStringExtra("shaReadme")
+        shaLicense = bundle.getStringExtra("shaLicense")
 
         // init db
         dbHelper = DBHelper(this)
@@ -138,36 +152,13 @@ class MainActivity : AppCompatActivity() {
         textAbout = findViewById(R.id.about)
 
         navView.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
-
-        setLatestCommit()
         fetchReadMe()
     }
 
     private fun showReadMe(text: String) {
         loadingPanel.visibility = GONE
-        val text2 =
-            """
-<p>![Test Sozluk](testdictionary-android-app/app/src/main/res/drawable/dictionary.png) Daha iyi bir iletişim i&ccedil;in kişilerin birbirlerini daha iyi anlaması, yani ortak bir dil kullanması gerekir. Bu ise kullanılan terimlerin ve &ouml;zel kelimelerin herkes tarafından aynı anlamda kullanılmasıyla olabilir. Test M&uuml;hendisi olarak, farklı gruplara (farklı yazılım disiplinlerine) k&ouml;pr&uuml; g&ouml;revi g&ouml;ren bir disiplinde aynı şeyleri s&ouml;yleyip aynı şeyleri anlamak daha &ouml;nemlidir. Yazılım test m&uuml;hendisliği d&uuml;ş&uuml;n&uuml;ld&uuml;ğ&uuml;nde ISTQB, ISEB, IEEE gibi kuruluşlar ve &ccedil;ok sayıda profesyonelin kişisel katkılarının olduğu bir disiplinde her şey İngilizce olarak &ouml;ğretilmektedir. Bundan dolayı terimlerin T&uuml;rk&ccedil;e'ye aktarılması sırasında anlam yanlışlıkları yapılabilmektedir. Buradaki sorun terimlerin İngilizce olmasının yanında konunun zor olmasından da kaynaklanmaktadır. Mesleğe yeni adım atmış bir m&uuml;hendis eğitim hayatı boyunca test ile ilgili &ccedil;ok az veya hi&ccedil;bir şey g&ouml;rmemiş olabiliyor. Esas g&ouml;revi test olmayan developer, analist, &uuml;r&uuml;n sahibi gibi roller ise bu terimleri farklı kaynaklardan dolayı yanlış veya hatalı kullanabiliyor. &Ccedil;eşitli kaynaklardan derlenerek hazırlanan <a href="https://www.slideshare.net/MesutGne/test-mhendisliine-giri-eitimi-blm-1">Test Eğitim 1</a> ve <a href="https://www.slideshare.net/MesutGne/test-mhendisliine-giri-eitimi-blm-2">Test Eğitim 2</a> isimli &ccedil;alışmanın bir par&ccedil;ası olan "Test S&ouml;zl&uuml;ğ&uuml;" &ccedil;alışmasında test m&uuml;hendisliğinde sık&ccedil;a karşılaşılan kelimelerin/terimlerin T&uuml;rk&ccedil;e karşılıklarını ve bazılarının kısa a&ccedil;ıklamalarını bulabilirsiniz. Daha fazla bilgi i&ccedil;in <a href="http://www.testrisk.com">Test Risk</a> blog postlarını okuyabilirsiniz. Eksik ve/veya yanlış olduğunu d&uuml;ş&uuml;nd&uuml;ğ&uuml;n&uuml;z terimleri d&uuml;zelterek veya yeni terimler ekleyerek katkı sağlamak i&ccedil;in GitHub &uuml;zerinde <a href="https://github.com/gunesmes/testsozluk">Test S&ouml;zl&uuml;k</a> projesine (PR) istek g&ouml;nderebilirsiniz. Bu sayede bu s&ouml;zl&uuml;ğ&uuml;n gelişmesine katkı sağlabilirsiniz.</p>
-<p><b>Katkı Sağlanabilecek Alanlar:</b></p>
-<ul style="list-style-type: circle;">
-<li>S&ouml;zl&uuml;kledeki terimlere <a href="https://github.com/gunesmes/testsozluk/blob/master/terms.json"> terms.json</a> ekleme/d&uuml;zeltme</li>
-<li>Android uygulaması (Kotlin, Java) d&uuml;zeltme/yeni &ouml;zellik ekleme <a href="https://github.com/gunesmes/testsozluk/tree/master/testdictionary-android-app/app">testdictionary-android-app/app</a></li>
-<li>Android uygulaması unit test (Kotlin, Junit) d&uuml;zeltme/yeni test ekleme <a href="https://github.com/gunesmes/testsozluk/tree/master/testdictionary-android-app/app/src/test/java/testrisk/dictionary">testdictionary-android-app/app</a></li>
-<li>Android uygulaması instrumentation test (Kotlin, Espresso, Junit) d&uuml;zeltme/yeni test ekleme <a href="https://github.com/gunesmes/testsozluk/tree/master/testdictionary-android-app/app/src/testAndroid/java/testrisk/dictionary">testdictionary-android-app/app</a></li>
-<li>iOS uygulaması</li>
-</ul>
-<p><b>Kaynak ve referanslar (Kaynak tavsiylerini buraya ekleyebilirsiniz):</b></p>
-<ul>
-<li><a href="https://www.slideshare.net/MesutGne/test-mhendisliine-giri-eitimi-blm-1">Test Eğitim 1</a></li>
-<li><a href="https://www.slideshare.net/MesutGne/test-mhendisliine-giri-eitimi-blm-2">Test Eğitim 2</a></li>
-<li><a href="https://www.istqb.org/downloads/send/51-ctfl2018/208-ctfl-2018-syllabus.html">ISTQB Foundation Level 2018 Syllabus</a></li>
-<li><a href="https://www.istqb.org/downloads/send/10-advanced-level-syllabus-2012/55-advanced-level-syllabus-2012-technical-test-analyst.html">ISTQB Advanced Level Syllabus (2012) Technical Test Analyst</a></li>
-<li><a href="https://www.istqb.org/downloads/send/12-expert-level-documents/75-expert-level-syllabus-improving-the-testing-process-2011.html">ISTQB Expert Level Syllabus - Improving the Testing Process (2011)</a></li>
-</ul>
-        """.trimIndent()
         textMessage.movementMethod = LinkMovementMethod.getInstance()
         textMessage.text = Html.fromHtml(boldTitle(removeImage(parseTextLink(text))))
-        //textMessage.text = Html.fromHtml(text)
     }
 
     private fun showTerms(terms: List<Term>) {
@@ -252,7 +243,7 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun fetchAbout() {
-        val shaDB = dbHelper?.getSha("about")
+        val shaDB = dbHelper?.getSha("license")
 
         if (shaLicense != shaDB) {
             addOrUpdateSha("license", shaLicense, shaDB)
@@ -277,7 +268,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun setLatestCommit() {
+    fun setLatestCommit() {
+        Thread.sleep(1000)
         Log.v("setLatestCommit called", "setLatestCommit")
         TermsApi().getLatestCommit().enqueue(object: Callback<ResponseBody>{
             override fun onFailure(call: Call<ResponseBody>, t: Throwable) {
@@ -320,7 +312,7 @@ class MainActivity : AppCompatActivity() {
     private fun addOrUpdateSha(fileName: String, newSha: String, shaOnDb: String?) {
         Log.v("Terms: $newSha != $shaOnDb", "DB")
 
-        if (fileName == "notGetShaFromDB") {
+        if (shaOnDb == "notGetShaFromDB") {
             dbHelper?.addSha(fileName = fileName, newSha = newSha)
         } else {
             dbHelper?.updateSha(fileName = fileName, newSha = newSha)

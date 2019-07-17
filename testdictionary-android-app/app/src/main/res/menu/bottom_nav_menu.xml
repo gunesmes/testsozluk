@@ -13,7 +13,7 @@
 
     <item
             android:id="@+id/navigation_about"
-            android:icon="@drawable/ic_notifications_black_24dp"
+            android:icon="?attr/actionModePasteDrawable"
             android:title="@string/title_about"/>
 
 </menu>
