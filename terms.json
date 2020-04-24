@@ -518,5 +518,10 @@
   {
     "term": "Scripting Language (Scripting Dili)",
     "meaning": "Test otomasyonunda kullanılabilen programlama dili."
+  },
+  {
+    "term": "Microservice",
+    "meaning": "Servisleri işlevlik açısından olabildiğine küçük tutararak birbirine bağımlılığı azalmak için tasarlanmış yeni bir mimaridir. Monollitik (merkezi) bir mimari yerine daha modern ve yönetilebilir bir mimaridir."
   }
+
 ]
