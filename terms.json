@@ -522,6 +522,10 @@
   {
     "term": "Microservice",
     "meaning": "Servisleri işlevlik açısından olabildiğine küçük tutararak birbirine bağımlılığı azalmak için tasarlanmış yeni bir mimaridir. Monollitik (merkezi) bir mimari yerine daha modern ve yönetilebilir bir mimaridir."
+  },
+  {
+    "term": "Microservice Testing",
+    "meaning": "Mikroservis Testleri. Bilenen servis testlerinin aksine testler daha atomize adilmiş olmalıdır, yani her mikroservis kendi datası ile izole olarak test edilebileck bir test yaklaşımı sunulmalıdır. Mikroservis mimarisinin en önemli faydalarından birtasesi bağımsız olarak deploy edilebilmesidir. Bu anlamda her bir mikroservisinde bağımsız olarak test edilebilmesi gerekmektedir. Bu durumda farklı test türlerinide, contractor test gibi, test stratejimize dahil etmemiz gerekir."
   }
 
 ]
