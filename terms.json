@@ -525,7 +525,7 @@
   },
   {
     "term": "Microservice Testing",
-    "meaning": "Mikroservis Testleri. Bilenen servis testlerinin aksine testler daha atomize adilmiş olmalıdır, yani her mikroservis kendi datası ile izole olarak test edilebileck bir test yaklaşımı sunulmalıdır. Mikroservis mimarisinin en önemli faydalarından birtasesi bağımsız olarak deploy edilebilmesidir. Bu anlamda her bir mikroservisinde bağımsız olarak test edilebilmesi gerekmektedir. Bu durumda farklı test türlerinide, contractor test gibi, test stratejimize dahil etmemiz gerekir."
+    "meaning": "Mikroservis Testleri. Bilenen servis testlerinin aksine testler daha atomize edilmiş olmalıdır, yani her mikroservis kendi datası ile izole olarak test edilebileck bir test yaklaşımı sunulmalıdır. Mikroservis mimarisinin en önemli faydalarından bir tanesi bağımsız olarak deploy edilebilmesidir, bu anlamda her bir mikroservisin de bağımsız olarak test edilebilmesi gerekmektedir. Mikroservis testlerinde farklı test türlerini de, contractor test gibi, test stratejimize dahil etmemiz gerekir."
   }
 
 ]
