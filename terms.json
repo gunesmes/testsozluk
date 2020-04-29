@@ -542,5 +542,20 @@
   {
     "term": "Provider",
     "meaning": "Genel olarak servis sağlayan servis, mikroservis, API veya server olarak kullanılır. Mikroservis testleri için özel olarak mikroservisler bu anlamda kullanılır. Bakınız 'Contrat Test'."
+  },
+  {
+    "term": "Smoke Test",
+    "meaning": "Derinlemesi test yapmadan önce uygulamanın yüzeysel olarak test edilmesi. Smoke test ile uygulamanın veya yeni geliştirilen bir özelliğin gereksinimlerinin genelinin yüzeysel olarak test edilir. İterasyonu alınan ürünün test için hazır olup olmadığını smoke test yaparak anlayabiliriz. Smoke test ile temel bazı fonksyionları test eder ve çok fazla hata saptanmaz ise test ileri seviye testlere geçebiliriz. Eğer ürün smoke testten geçecek kadar olgunlaşmamış ise teste başlama kriterlerini sağlamadığı için reddedilebilir."
+  },
+  {
+    "term": "Sanity Test",
+    "meaning": "Yeni geliştirilen bir özelliğin detaylara girmeden olarak test edilmesidir. "
+  },
+  {
+    "term": "Smoke VS Sanity",
+    "meaning": "Smoke tüm uygulamayı yüzeysel olarak bakar, sanity ise bir özelliği detaylara girmeden test etmekdir. Smoke test ile uygulamanın stabilitesi kontrol edilirken, sanity ile çözümün mantığı/akla uyguluğu test edilir."
   }
+  
+  
+  
 ]
