@@ -1,4 +1,4 @@
-![Test Sozluk](testdictionary-android-app/app/src/main/res/drawable/dictionary.png)
+![Test Sozluk](src/img/dictionary.png)
 
 Daha iyi bir iletişim için kişilerin birbirlerini daha iyi anlaması, yani ortak bir dil kullanması gerekir. Bu ise kullanılan terimlerin ve özel kelimelerin herkes tarafından aynı anlamda kullanılmasıyla olabilir. Test Mühendisi olarak, farklı gruplara (farklı yazılım disiplinlerine) köprü görevi gören bir disiplinde aynı şeyleri söyleyip aynı şeyleri anlamak daha önemlidir. 
 
@@ -10,10 +10,12 @@ Eksik ve/veya yanlış olduğunu düşündüğünüz terimleri düzelterek veya 
 
 ### Katkı Sağlanabilecek Alanlar:
   * Sözlükledeki terimlere [terms.json](https://github.com/gunesmes/testsozluk/blob/master/terms.json) ekleme/düzeltme
-  * Android uygulaması (Kotlin, Java) düzeltme/yeni özellik ekleme [testdictionary-android-app/app](https://github.com/gunesmes/testsozluk/tree/master/testdictionary-android-app/app).
-  * Android uygulaması unit test (Kotlin, Junit) düzeltme/yeni test ekleme [testdictionary-android-app/app](https://github.com/gunesmes/testsozluk/tree/master/testdictionary-android-app/app/src/test/java/testrisk/dictionary)
-  * Android uygulaması instrumentation test (Kotlin, Espresso, Junit) düzeltme/yeni test ekleme [testdictionary-android-app/app](https://github.com/gunesmes/testsozluk/tree/master/testdictionary-android-app/app/src/testAndroid/java/testrisk/dictionary)
-  * iOS uygulaması
+  * Android uygulaması (Kotlin, Java) düzeltme/yeni özellik ekleme [testdictionary-android-app](https://github.com/gunesmes/testdictionary-android-app).
+  * Android uygulaması unit test (Kotlin, Junit) düzeltme/yeni test ekleme [testdictionary-android-app/test](https://github.com/gunesmes/testdictionary-android-app/app/src/test/java/testrisk/dictionary)
+  * Android uygulaması instrumentation test (Kotlin, Espresso, Junit) düzeltme/yeni test ekleme [testdictionary-android-app/androidTest](https://github.com/gunesmes/testdictionary-android-app/app/src/testAndroid/java/testrisk/dictionary)
+  * iOS uygulaması (Swift) düzeltme/yeni özellik ekleme [testdictionary-ios-app](https://github.com/gunesmes/testdictionary-ios-app)
+  * iOS uygulaması unit test (XCTest) düzeltme/yeni test ekleme [testdictionary-ios-app](https://github.com/gunesmes/testdictionary-ios-app)
+  * iOS uygulaması instrumentation test (XCUITest) düzeltme/yeni test ekleme [testdictionary-ios-app](https://github.com/gunesmes/testdictionary-ios-app)
 
 ### Kaynak ve referanslar (Kaynak tavsiyelerini buraya ekleyebilirsiniz):
   * [Test Eğitim 1](https://www.slideshare.net/MesutGne/test-mhendisliine-giri-eitimi-blm-1)
