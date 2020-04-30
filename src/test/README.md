@@ -18,9 +18,25 @@ cd testsozluk/
 bundle install
 ```
 
-## Run test
+## Run a spec file
 ```shell script
 # go to test folder
 cd testsozluk/src/test
 rspec specs/validate_json_files_spec.rb 
+```
+
+### Run whole tests
+```shell script
+~/P/p/t/t/s/test (develop ⚡) rspec specs/
+
+Starting test: File Format Check terms.json should be a valid json file
+.
+Starting test: File Format Check terms.json each term should have `term` and `meaning`
+.
+Starting test: File Format Check terms.json should not have duplicated keys/terms
+.
+
+Finished in 0.0081 seconds (files took 0.69206 seconds to load)
+3 examples, 0 failures
+
 ```
