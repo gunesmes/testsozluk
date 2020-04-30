@@ -5,7 +5,7 @@ require 'json'
 RSpec.context 'File Format Check' do
 	describe 'terms.json' do
     before(:context) do
-			file = File.open("#{File.dirname(__FILE__ )}/../../terms.json")
+			file = File.open("#{File.dirname(__FILE__ )}/../../../terms.json")
 			@file_content = file.read
     end
 
