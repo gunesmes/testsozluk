@@ -1,4 +1,7 @@
-![Test Sozluk](src/img/dictionary.png)
+<p align="center">
+  <img width="240" height="240" src="https://github.com/gunesmes/testsozluk/blob/master/src/img/dictionary.png" >
+</p>
+
 
 Daha iyi bir iletişim için kişilerin birbirlerini daha iyi anlaması, yani ortak bir dil kullanması gerekir. Bu ise kullanılan terimlerin ve özel kelimelerin herkes tarafından aynı anlamda kullanılmasıyla olabilir. Test Mühendisi olarak, farklı gruplara (farklı yazılım disiplinlerine) köprü görevi gören bir disiplinde aynı şeyleri söyleyip aynı şeyleri anlamak daha önemlidir. 
 
