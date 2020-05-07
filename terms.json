@@ -4,6 +4,14 @@
     "meaning": "Alfa testi, yazılım geliştirme ortamında yapılan kullanıcı kabul testleridir; Beta testi ise kullanıcıların kendi ortamlarında bilfiil uygulamayı kullanarak yaptıkları test aktiviteleridir. Eğer belirli sayıda ve davet ile belli profilde kullanıcılara izin verilerek beta testi amaçlanıyor ise buna closed-beta testi denir; kullanıcılarda herhangi bir sınırlama yok ise open-beta testi olarak adlandırılır."
   },
   {
+    "term": "Closed Alpha-Beta Testing",
+    "meaning": "Eğer testleri denetimli bir grup içerisinde yapılıyorsa kapalı alfa/beta test denir."
+  },
+  {
+    "term": "Open Alpha-Beta Testing",
+    "meaning": "Eğer testleri halka açık olarak yaptırılıyor ve kullanıcılar arasında her hangi bir kısıtlama konulmuyor ise açık alfa/beta testi denir. Test yapan kişiler uygulmayı normal olarak kullanırlar ve uygulamanın henüz test uygulaması olduğunu bilirler."
+  },
+  {
     "term": "BB Test Design Tech. (Black Box – Kara Kutu Test Teknikleri)",
     "meaning": "Yazılımın fonksiyonları test edilir. Yazılımın iç yapısı (kod, database, aktarım, vb.) görülmediği için kullanıcı gibi test edilir, bu yüzden kara-kutu testler denir. Girişlere karşılık gelen çıkışlar kontrol edilir, hatalı çıkışlar saptanır."
   },
