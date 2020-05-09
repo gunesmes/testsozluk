@@ -550,5 +550,13 @@
   {
     "term": "White-box Testing",
     "meaning": "Beyaz kutu testleri"
+  },
+  {
+    "term": "Canary Deployment",
+    "meaning": "Bir sürüm (deployment) çıkma stratejisidir. Canlıya yeni bir sürüm (deployment) işleminin önce küçük bir sunucu grubuna yapılarak yeni gelen sürümün bir hataya neden olup olmadığını kontrol edip emin olduktan sonra diğer sunuculara kademeli olarak aktarılmasıdır. Bu sayede hem canlı uygulamada servis kesintisine neden olunmaz hem de yeni gelen sürümle riskler azaltılarak canlıya alınmış olur. Bakınız diğer deployment stratejileri: recreate, ramped, blue/green, A/B testing, shadow"
+  },
+  {
+    "term": "Canary Testing",
+    "meaning": "Yeni sürüm sonrası hızlıca sistemin hazır olup olmadığını kontrol edilmesidir. Sanity vey smoke testi ile karıştırılabilir fakat canary test ile sistem sevisinde kontroller yapılır. Network bağlantı, database, disk kullanımı, sertifika gibi kontroller bu grubua girer. "
   }
 ]
