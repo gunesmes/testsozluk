@@ -558,5 +558,25 @@
   {
     "term": "Canary Testing",
     "meaning": "Yeni sürüm sonrası hızlıca sistemin hazır olup olmadığını kontrol edilmesidir. Sanity vey smoke testi ile karıştırılabilir fakat canary test ile sistem sevisinde kontroller yapılır. Network bağlantı, database, disk kullanımı, sertifika gibi kontroller bu grubua girer. "
+  },
+  {
+    "term": "TestOps",
+    "meaning": "`Tests and Operations` olarak açabiliriz. Genel DevOps kültürü içerisinde bir alt disiplindir. Operasyon süreçlerinin bazı aktivitilerini testin içersine dahil edilmesi ve yazılım güncellemelerinde özellikle hataların canlı ortamlarda kontrol edilmesi, sürekli testlerin (continues testing) yapılarak canlı sistemin sürekli test edilmesidir. Ayrıca hem shift-left yaklaşımı hem de shift-right yaklaşımıda daha teknik görevlerin yerine getirilmesi için gerekli disiplindir."
+  },
+  {
+    "term": "Shift-left testing",
+    "meaning": "Yazılım geliştirme hattını (pipeline) düşündüğümüzde, özellikle pipeline içerisinde solda tarafında kalan alanda testlerin daha fazla yapılmasıdır. Yani testlerin yazılım geliştirme süreçlerinde olabildiğince önce başlayarak hataların erken aşamada ortaya çıkartılması ve çözüm maliyetlerinin düşürülmesi hedeflenmektedir. Test daha analiz dökümanların statik test edilmesinden başlanabilir, daha sonra unit-testler daha fazla yazılabilir gibi örnekler verebiliriz."
+  },
+  {
+    "term": "Shift-right testing",
+    "meaning": "Yazılım geliştirme hattını (pipeline) düşündüğümüzde, özellikle pipeline içerisinde solda tarafında kalan alanda testlerin daha fazla yapılmasıdır. Yani testleri yazılım geliştirme süreçlerinin özellikle son kısımlarında yapılmasıdır. Özellikle microservis mimari patternin kullanımının artmasıyla sistemler daha kompleks bir hal aldı ve bunun neticesinde entegrasyon testlerinin öneminin artması ile ihtiyac duyulur oldu. Test ortamlarının canlı ortamlar kadar iyi yapılması fikri uygulanabilir olmaktan çıkmasıyla birlikte özellikle Netflix gibi bu mimariye önderlik eden firmalar test stratejileri değiştirerek canlı ortamlarda `Chaos Engineering` kullanılarak kontroller yapılmasını uygulamaya başladılar. Yine sürekli test (continues testing) shift-right yaklaşımı içerisinde düşünülmelidir, canlı ortamların sürekli test edilerek hatalar saptanır."
+  },
+  {
+    "term": "Chaos Engineering",
+    "meaning": "Chaos"
+  },
+  {
+    "term": "Continues Testing",
+    "meaning": "Sürekli test"
   }
 ]
