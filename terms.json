@@ -473,11 +473,7 @@
   },
   {
     "term": "Test level",
-    "meaning": "Test seviyesi; birim test, komponent testi, entegrasyon testleri, sistem testleri, kullancı kabul testleri."
-  },
-  {
-    "term": "Test level (Test Seviyesi)",
-    "meaning": "Test seviyesi, birim-entegrasyon- ..."
+    "meaning": "Test seviyesi; birim test, entegrasyon testleri, sistem testleri"
   },
   {
     "term": "Test objective",
