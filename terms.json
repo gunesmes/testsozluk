@@ -574,5 +574,9 @@
   {
     "term": "Continues Testing",
     "meaning": "Sürekli test"
+  },
+  {
+    "term": "POM - Page Object Model",
+    "meaning": "Test otomasyonun daha verimli geliştirilmesi için oluşturulmuş framework. Nesle-yönelimli (object-oriented) yazılım geliştirme yöntemlerin test için kullanılması ve DRY (dont repeat yourself), tek-sorumluk (single responsibility prensibility) prensiblerininde frameworke dahil edilerek bakım maliyetlerinin en aza indirilmesini amaçlayan bir bir test frameworküdür. Basitce her bir sayfa(web) / ekran(mobil) için temel objelerin olduğu bir  BasePage sınıftan türeyen bir yeni bir sınıf altında ekran veya sayfanın yazılmasıdır. Bununla birlikte sayfaların ve testlerinde ayrı bir sınıfta tutularak, sayfa elemanlara erişim işini Page sınıfına, testlerin yazımı işini Test sınıfına bırakılır."
   }
 ]
