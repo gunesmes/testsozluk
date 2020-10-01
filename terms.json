@@ -569,7 +569,7 @@
   },
   {
     "term": "Chaos Engineering",
-    "meaning": "Chaos"
+    "meaning": "Kaos mühendisliği. Canlı sistemlerin beklenmedik durumlar karşısında verdiği cevapları incelemek için yapılan deneyimler/testlerdir. Canlı sistem yapılan testlerin, sürekli test (continuous testing), daha etkili ve hızlı sonuçlar vermeside için kaos mühendisliği prensibleri ile yapılmasıdır. İlk olarak 2010 yılında Netflix tarafın sunucuların Amazon Web Servislere (AWS) taşınması sırasında çıkan test zorluklarını atlatmak için kullanılmıştır."
   },
   {
     "term": "Continues Testing",
