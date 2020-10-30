@@ -594,5 +594,9 @@
   {
     "term": "UX Writer - User Experience Writer",
     "meaning": "Kullanıcı deneyimi yazarı. Uygulamalar üzerindeki yönergeleri, mesajları, bildirileri, veya benzeri metinleri kullanıcıların anlayacağı dille ve uygulamanın terminolojisine uygun olarak anlatan kişilerdir. Kullanıcı deneyiminde olduğu gibi bu metinlerinde kullanıcılar için anlaşılabilir ve basit olmalı."
+  },
+  {
+    "term": "Use the Front Door First (As Principle) or Front Door First",
+    "meaning": "Öncelikle ön kapıyı kullan prensibi veya ön kapı ilk prensibi. Her uygulamada bir kısım dışarıya (istemcilere) açık ve kapalı komponentler vardır. Öncelikle testleri yazarken, uygulamayı kullanacak istemciyi (client) düşünerek test yazılmalıdır. Bu durum hem birim (unit) test hem de kullanıcı arayüzü (user interface) ve entegrasyon testlerinde geçerlidir. Kullanıcı deneyimi (User Experience) açısından ise bu prensip şöyle kullanılır: bir uygulamaya her kullanıcı ana sayfayı kullanarak gelmez farklı kaynaklardan yönledirilerekte gelebilir bu durumda da kullanıcılara uygulamayı kullanması gerekli yönergeleri ve bilgilerndirmeleri yapmak gerekir."
   }
 ]
