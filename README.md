@@ -1,4 +1,4 @@
-![Test Sozluk](https://github.com/gunesmes/testsozluk/blob/master/src/img/dictionary.png)
+#![Test Sozluk](src/img/dictionary.png)
 
 
 Daha iyi bir iletişim için kişilerin birbirlerini daha iyi anlaması, yani ortak bir dil kullanması gerekir. Bu ise kullanılan terimlerin ve özel kelimelerin herkes tarafından aynı anlamda kullanılmasıyla olabilir. Test Mühendisi olarak, farklı gruplara (farklı yazılım disiplinlerine) köprü görevi gören bir disiplinde aynı şeyleri söyleyip aynı şeyleri anlamak daha önemlidir. 
@@ -9,7 +9,7 @@ Yazılım test mühendisliği düşünüldüğünde ISTQB, ISEB, IEEE gibi kurul
 
 Eksik ve/veya yanlış olduğunu düşündüğünüz terimleri düzelterek veya yeni terimler ekleyerek katkı sağlamak için GitHub üzerinde [Test Sözlük](https://github.com/gunesmes/testsozluk) projesine (PR) istek gönderebilirsiniz. Bu sayede bu sözlüğün gelişmesine katkı sağlayabilirsiniz.
 
-### Katkı Sağlanabilecek Alanlar:
+#### Katkı Sağlanabilecek Alanlar:
   * Sözlükledeki terimlere [terms.json](https://github.com/gunesmes/testsozluk/blob/master/terms.json) ekleme/düzeltme
   * Android uygulaması (Kotlin, Java) düzeltme/yeni özellik ekleme [testdictionary-android-app](https://github.com/gunesmes/testdictionary-android-app).
   * Android uygulaması unit test (Kotlin, Junit) düzeltme/yeni test ekleme [testdictionary-android-app/test](https://github.com/gunesmes/testdictionary-android-app/app/src/test/java/testrisk/dictionary)
@@ -18,7 +18,7 @@ Eksik ve/veya yanlış olduğunu düşündüğünüz terimleri düzelterek veya 
   * iOS uygulaması unit test (XCTest) düzeltme/yeni test ekleme [testdictionary-ios-app](https://github.com/gunesmes/testdictionary-ios-app)
   * iOS uygulaması instrumentation test (XCUITest) düzeltme/yeni test ekleme [testdictionary-ios-app](https://github.com/gunesmes/testdictionary-ios-app)
 
-### Kaynak ve referanslar (Kaynak tavsiyelerini buraya ekleyebilirsiniz):
+#### Kaynak ve referanslar (Kaynak tavsiyelerini buraya ekleyebilirsiniz):
   * [Test Eğitim 1](https://www.slideshare.net/MesutGne/test-mhendisliine-giri-eitimi-blm-1)
   * [Test Eğitim 2](https://www.slideshare.net/MesutGne/test-mhendisliine-giri-eitimi-blm-2)
   * [ISTQB Foundation Level 2018 Syllabus](https://www.istqb.org/downloads/send/51-ctfl2018/208-ctfl-2018-syllabus.html)
