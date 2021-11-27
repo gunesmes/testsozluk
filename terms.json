@@ -602,5 +602,9 @@
   {
     "term": "API Gateway",
     "meaning": "API Gateway, client tarafından gelen tüm istekleri alarak ilgili birimlere aktaran bir proxy servers olarak görev yapar. Modern mimaride API Gateway arkasına bağlı REST servisler, HTTP servisler veya Lamda fonksiyonlar olabilir. API Gateway backend servislerin önünde bir soyutma seviyesidir. Genel olarak authorization, authtentication, routing, caching, tranformation gibi görevleri yerine getirerek, yazılımcılar için kolaylık sağlayarak business kısmına odaklanmasına yardımcı olur. Amazon, Google, Azure, IBM, Oracle gibi ana bulut servis sağlayıcıları tarafıdan desteklenir."
+  },
+  {
+    "term": "Release",
+    "meaning": "Sürüm, yazılım güncellemeleri için hazırlanan paketlerin geliştirme, test ve canlı ortamlara atılması (deployment) edilmesi için kullanılan bir terimdir. "
   }
 ]
