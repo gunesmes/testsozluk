@@ -34,9 +34,10 @@ jobs:
         ruby-version: 2.6
     - name: Install dependencies
       run: bundle install
+    - name: Run Mock server
+      run: docker run -it --rm -p 5050:8080 --name wiremock wiremock/wiremock:2.32.0 --enable-stub-cors
     - name: Run Rspec Tests
       run: |
-        docker --version
         cd src/test
         rspec specs
       
