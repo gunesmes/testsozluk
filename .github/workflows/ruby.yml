@@ -17,6 +17,9 @@ jobs:
   test:
 
     runs-on: ubuntu-latest
+    services:
+      docker-dind:
+        image: docker:19.03.12-dind
 
     steps:
     - uses: actions/checkout@v2
@@ -33,6 +36,7 @@ jobs:
       run: bundle install
     - name: Run Rspec Tests
       run: |
+        docker --version
         cd src/test
         rspec specs
       
