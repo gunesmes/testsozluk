@@ -35,7 +35,7 @@ jobs:
     - name: Install dependencies
       run: bundle install
     - name: Run Mock server
-      run: docker run -it --rm -p 5050:8080 --name wiremock wiremock/wiremock:2.32.0 --enable-stub-cors
+      run: docker run --rm -p 5050:8080 --name wiremock wiremock/wiremock:2.32.0 --enable-stub-cors
     - name: Run Rspec Tests
       run: |
         cd src/test
