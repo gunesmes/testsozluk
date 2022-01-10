@@ -35,7 +35,7 @@ jobs:
     - name: Install dependencies
       run: bundle install
     - name: Run Mock server
-      run: /bin/bash ../run-mock-server.sh
+      run: /bin/bash scripts/run-mock-server.sh
     - name: Run Rspec Tests
       run: |
         cd src/test
