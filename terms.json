@@ -606,5 +606,9 @@
   {
     "term": "Release",
     "meaning": "Sürüm, yazılım güncellemeleri için hazırlanan paketlerin geliştirme, test ve canlı ortamlara atılması (deployment) edilmesi için kullanılan bir terimdir. "
+  },
+  {
+    "term": "CMMI",
+    "meaning": "Ingilizcesi 'Capability Maturity Model Integration' ve Türkçe'ye 'Yetenek, olgunluk model entegrasyonu' olarak cevrilebilir. Amacı yazılım geliştirme organizasyonlarının ne olgun olduğunu derecelendirerek daha iyisini yapmak için gerekli adımları tanımlamaktır. Altı farklı seviyesi vardır. Seviye-0 olarak adlandrılıran seviyede yetersizliği gösterir. Daha sonraki seviyler ise: icra edile (perfomed), yönetilen (managed), tanımlı (defined), nicel olarak yönetilen (quantitatively managed), daha iyi olabilen (optimized) olarak nitelendirilmiştir. Genellikle askeri ve devlet destekli kamu projelerinde göz önüne alınır ve yazılım firmalarında ön şart olarak istenir. Örnegin en az seviye-4 olması gerekiyor gibi sart koşulur fakat özel sektörde çok fazla dikkate alınmaz."
   }
 ]
