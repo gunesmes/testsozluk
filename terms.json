@@ -72,6 +72,10 @@
     "meaning": "Bakınız 'Consumer-Driven Contract Testing'. Mikroservislerin bir birleri ile olan etklileşimlerini test etmek için kullanılan terimdir. Bir mikroservisi kullanan başka bir servisin (consumer) bu mikroservisden beklediği cevabı her zaman vermesi yani bu ilişkinin belli bir anlaşma (contract) altına alınmasına contract test denir, ve bu testlerin diğer servislerden izole edilmiş olarak yapılmasıdır. Microservis testlerinde en yaygın kullanılan PACT is şöyle tanımlar: Contract testing is a technique for testing an integration point by checking each application in isolation to ensure the messages it sends or receives conform to a shared understanding that is documented in a 'contract'"
   },
   {
+    "term": "Provider-Driven Contract Testing",
+    "meaning": "Contract provider tarafından yaratılarak test tarafının yönlendirilmesi (drive) anlamına gelir. Yani sözleme kurulmuştur ve implementasyonun bunun üzerine kurgulanması gerekir. Clientlar dikkate alınmaz daha doğrusu bu tür yaklaşımda geliştirme yapan API/servisler daha çok tüketilmek/kullanılmak üzere oluşturulmuşlardır. Tek taraflı bir ilişki söz konusudur. Servis olarak ben bunu yaptım senden de bunu bu şekilde kullanmanı bekliyorum şeklinde bir yaklaşımdır. Genelde public APIler buna örnektir."
+  },
+  {
     "term": "Control Flow (Akış şeması)",
     "meaning": "Yazılan kodun işletilmesi sırasında neleri yapacağını gösteren yol, akış şemaşı."
   },
