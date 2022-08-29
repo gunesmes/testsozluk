@@ -72,6 +72,10 @@
     "meaning": "Bakınız 'Consumer-Driven Contract Testing'. Mikroservislerin bir birleri ile olan etklileşimlerini test etmek için kullanılan terimdir. Bir mikroservisi kullanan başka bir servisin (consumer) bu mikroservisden beklediği cevabı her zaman vermesi yani bu ilişkinin belli bir anlaşma (contract) altına alınmasına contract test denir, ve bu testlerin diğer servislerden izole edilmiş olarak yapılmasıdır. Microservis testlerinde en yaygın kullanılan PACT is şöyle tanımlar: Contract testing is a technique for testing an integration point by checking each application in isolation to ensure the messages it sends or receives conform to a shared understanding that is documented in a 'contract'"
   },
   {
+    "term": "Provider-Driven Contract Testing",
+    "meaning": "Contract provider tarafından yaratılarak test tarafının yönlendirilmesi (drive) anlamına gelir. Yani sözleme kurulmuştur ve implementasyonun bunun üzerine kurgulanması gerekir. Clientlar dikkate alınmaz daha doğrusu bu tür yaklaşımda geliştirme yapan API/servisler daha çok tüketilmek/kullanılmak üzere oluşturulmuşlardır. Tek taraflı bir ilişki söz konusudur. Servis olarak ben bunu yaptım senden de bunu bu şekilde kullanmanı bekliyorum şeklinde bir yaklaşımdır. Genelde public APIler buna örnektir."
+  },
+  {
     "term": "Control Flow (Akış şeması)",
     "meaning": "Yazılan kodun işletilmesi sırasında neleri yapacağını gösteren yol, akış şemaşı."
   },
@@ -606,5 +610,9 @@
   {
     "term": "Release",
     "meaning": "Sürüm, yazılım güncellemeleri için hazırlanan paketlerin geliştirme, test ve canlı ortamlara atılması (deployment) edilmesi için kullanılan bir terimdir. "
+  },
+  {
+    "term": "CMMI",
+    "meaning": "Ingilizcesi 'Capability Maturity Model Integration' ve Türkçe'ye 'Yetenek, olgunluk model entegrasyonu' olarak cevrilebilir. Amacı yazılım geliştirme organizasyonlarının ne olgun olduğunu derecelendirerek daha iyisini yapmak için gerekli adımları tanımlamaktır. Altı farklı seviyesi vardır. Seviye-0 olarak adlandrılıran seviyede yetersizliği gösterir. Daha sonraki seviyler ise: icra edile (perfomed), yönetilen (managed), tanımlı (defined), nicel olarak yönetilen (quantitatively managed), daha iyi olabilen (optimized) olarak nitelendirilmiştir. Genellikle askeri ve devlet destekli kamu projelerinde göz önüne alınır ve yazılım firmalarında ön şart olarak istenir. Örnegin en az seviye-4 olması gerekiyor gibi sart koşulur fakat özel sektörde çok fazla dikkate alınmaz."
   }
 ]
