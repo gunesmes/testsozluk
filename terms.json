@@ -4,6 +4,10 @@
     "meaning": "Alfa testi, yazılım geliştirme ortamında yapılan kullanıcı kabul testleridir; Beta testi ise kullanıcıların kendi ortamlarında bilfiil uygulamayı kullanarak yaptıkları test aktiviteleridir. Eğer belirli sayıda ve davet ile belli profilde kullanıcılara izin verilerek beta testi amaçlanıyor ise buna closed-beta testi denir; kullanıcılarda herhangi bir sınırlama yok ise open-beta testi olarak adlandırılır."
   },
   {
+    "term": "API",
+    "meaning": "Also bakınız 'API Gateway'. 'Aplication programming interface' veya 'Uygulama proğramlama arayüzü' olarak çevrilebilir. Yazılım veya hizmerlerin servis olarak dış dünyaya açılan kapısıdır. API ile clientlar ilgili verilere ulaşarak müşteriye sunmak için kullanabilirler. API'lar gelen request'lere uygun response dönerek verilerin paylaşılmasını sağlarlar."
+  },
+  {
     "term": "Closed Alpha-Beta Testing",
     "meaning": "Eğer testleri denetimli bir grup içerisinde yapılıyorsa kapalı alfa/beta test denir."
   },
