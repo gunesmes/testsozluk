@@ -618,5 +618,9 @@
   {
     "term": "CMMI",
     "meaning": "Ingilizcesi 'Capability Maturity Model Integration' ve Türkçe'ye 'Yetenek, olgunluk model entegrasyonu' olarak cevrilebilir. Amacı yazılım geliştirme organizasyonlarının ne olgun olduğunu derecelendirerek daha iyisini yapmak için gerekli adımları tanımlamaktır. Altı farklı seviyesi vardır. Seviye-0 olarak adlandrılıran seviyede yetersizliği gösterir. Daha sonraki seviyler ise: icra edile (perfomed), yönetilen (managed), tanımlı (defined), nicel olarak yönetilen (quantitatively managed), daha iyi olabilen (optimized) olarak nitelendirilmiştir. Genellikle askeri ve devlet destekli kamu projelerinde göz önüne alınır ve yazılım firmalarında ön şart olarak istenir. Örnegin en az seviye-4 olması gerekiyor gibi sart koşulur fakat özel sektörde çok fazla dikkate alınmaz."
+  },
+  {
+    "term": "HTTP Methods",
+    "meaning": "Http Methodları servislerin son kullanıcılar tarafından kullanılmasını sağlayan anahtar kelimelerdir, gönderilecek olan isteğin amacını anlatır. Yaygın olarak POST, GET, PUT, PATCH ve DELETE methodları kullanılır. Her bir method servis için anlamlı bir URL ile istek gönderir ve serviste bu isteği yorumlayarak gerekli cevabı döner. POST methodu yeni bir veri oluşturmayı, GET methodu veri okumayı, PUT mecvut veriyi günceller veya yenisiyle değiştir, PATCH var olan veriyi güncelleme, ekleme yapar, DELETE ise var olan veriyi silmek için kullanılır. Daha az kullanılan methodlar ise OPTION ve HEAD'dir."
   }
 ]
