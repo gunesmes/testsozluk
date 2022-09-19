@@ -1,5 +1,9 @@
 [
   {
+    "term": "AD-HOC Testing",
+    "meaning": "Ad-Hoc terimi genelde plansız ve ön hazırlık olmaksızın yapoılan aktivitelerdir. Ad-Testing ise kurallara bağlı kalmadan analiz ve test tasarımı yapılmaksızın yapılan test aktivitleridir."
+  },
+  {
     "term": "Alpha-Beta Testing",
     "meaning": "Alfa testi, yazılım geliştirme ortamında yapılan kullanıcı kabul testleridir; Beta testi ise kullanıcıların kendi ortamlarında bilfiil uygulamayı kullanarak yaptıkları test aktiviteleridir. Eğer belirli sayıda ve davet ile belli profilde kullanıcılara izin verilerek beta testi amaçlanıyor ise buna closed-beta testi denir; kullanıcılarda herhangi bir sınırlama yok ise open-beta testi olarak adlandırılır."
   },
