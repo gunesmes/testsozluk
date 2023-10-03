@@ -29,6 +29,6 @@ jobs:
     - name: Run Rspec Tests
       run: |
         cd src/test
-        rspec specs
+        bundle exec rspec specs
       
       
