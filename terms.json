@@ -626,5 +626,9 @@
   {
     "term": "HTTP Methods",
     "meaning": "Http Methodları servislerin son kullanıcılar tarafından kullanılmasını sağlayan anahtar kelimelerdir, gönderilecek olan isteğin amacını anlatır. Yaygın olarak POST, GET, PUT, PATCH ve DELETE methodları kullanılır. Her bir method servis için anlamlı bir URL ile istek gönderir ve serviste bu isteği yorumlayarak gerekli cevabı döner. POST methodu yeni bir veri oluşturmayı, GET methodu veri okumayı, PUT mecvut veriyi günceller veya yenisiyle değiştir, PATCH var olan veriyi güncelleme, ekleme yapar, DELETE ise var olan veriyi silmek için kullanılır. Daha az kullanılan methodlar ise OPTION ve HEAD'dir."
+  },
+  {
+    "term": "Waterfall SDLC Model",
+    "meaning": "Şelale (waterfall) modeli sıralı bir süreçtir ve adımlar bir şelale gibi istikrarlı bir şekilde aşağı doğru gidiyor, bu nedenle bir sonraki adım başlamadan önce her adım tamamlanmalıdır. Süreç şu aşamaları içerir: gereksinimler toplama, tasarım, uygulama, test, dağıtım ve bakım. Şelalenin arkasındaki fikir, yinelemeli bir yaklaşım yapmak yerine bir chuck'da ürün/özellik yaratmaktır. Şelale modeli eski bir yaklaşımdır ve çoğunlukla çok açık gereksinimleri olan kuruluşlar için uygundur."
   }
 ]
