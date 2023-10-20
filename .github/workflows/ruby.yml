@@ -24,8 +24,8 @@ jobs:
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Install dependencies
       run: bundle install
-    - name: Run Mock server
-      run: /bin/bash .github/workflows/run-mock-server.sh
+    # - name: Run Mock server
+    #   run: /bin/bash .github/workflows/run-mock-server.sh
     - name: Run Rspec Tests
       run: |
         cd src/test
